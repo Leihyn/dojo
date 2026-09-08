@@ -1,0 +1,71 @@
+{
+  "builtAt": "2026-09-08T15:17:22.023Z",
+  "symbol": "BNBUSDT",
+  "interval": "5m",
+  "bars": 2000,
+  "spanDays": 6.94,
+  "horizonMin": 240,
+  "rangeWidthPct": 2,
+  "scorecards": {
+    "97:dojo-range-keeper": {
+      "agentKey": "97:dojo-range-keeper",
+      "receipts": 151,
+      "practiceTrades": 0,
+      "resolvedOutcomes": 151,
+      "graded": 151,
+      "horizons": [
+        {
+          "horizonMin": 240,
+          "n": 151,
+          "meanRet": 0.8849337748344372,
+          "hitRate": 0.7086092715231788,
+          "meanExcess": 0.4187362030905077,
+          "medianExcess": 0.3125,
+          "tExcess": 12.384222070918348
+        }
+      ],
+      "wilsonLower": 0.6316731117214294,
+      "honestyRate": 1,
+      "medianWallMs": 0,
+      "totalCostUsd": 0,
+      "score": 74.22,
+      "primaryHorizonMin": 240
+    },
+    "97:dojo-grid-planner": {
+      "agentKey": "97:dojo-grid-planner",
+      "receipts": 163,
+      "practiceTrades": 0,
+      "resolvedOutcomes": 163,
+      "graded": 163,
+      "horizons": [
+        {
+          "horizonMin": 240,
+          "n": 163,
+          "meanRet": -0.0021250025219395835,
+          "hitRate": 0.3128834355828221,
+          "meanExcess": -0.004484147082693094,
+          "medianExcess": -0.0037469455971665955,
+          "tExcess": -6.168014675475182
+        }
+      ],
+      "wilsonLower": 0.2467025831552839,
+      "honestyRate": 1,
+      "medianWallMs": 0,
+      "totalCostUsd": 0,
+      "score": 17.27,
+      "primaryHorizonMin": 240
+    }
+  },
+  "methods": {
+    "97:dojo-range-keeper": {
+      "metric": "time-in-range",
+      "source": "Binance BNBUSDT 5m klines",
+      "window": "6.9 days to 2026-09-08"
+    },
+    "97:dojo-grid-planner": {
+      "metric": "grid-pnl-vs-hold",
+      "source": "Binance BNBUSDT 5m klines",
+      "window": "6.9 days to 2026-09-08"
+    }
+  }
+}

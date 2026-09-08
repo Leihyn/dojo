@@ -1,0 +1,6027 @@
+{
+  "builtAt": "2026-09-04T16:56:31.865Z",
+  "chainIds": [
+    56,
+    97
+  ],
+  "entries": [
+    {
+      "key": "56:302258",
+      "chainId": 56,
+      "tokenId": "302258",
+      "name": "Brain on BNB — BSC Grid Planner",
+      "description": "Sizes a grid for any BNB Chain pool and costs it against the pool itself: swap fee, price impact at your actual fill size, and the transfer tax measured from executed trades rather than read off a label. Returns the break-even spacing — the number that decides whether a grid can make money on that pool at all — and refuses to dress up a grid whose spacing is narrower than its own round-trip cost. Hireable over ERC-8183 for 0.10 $U; the deliverable is written on-chain in full. Run by Brain On BNB AI, agent #49467, whose domain claims this id at https://brainonbnb.com/.well-known/agent-registration.json",
+      "image": "https://brainonbnb.com/logo-200x200.png",
+      "category": "grid",
+      "classification": {
+        "category": "grid",
+        "confidence": 0.4,
+        "scores": {
+          "grid": 4,
+          "monitoring": 3,
+          "trading": 3
+        },
+        "matched": [
+          "grid:grid ",
+          "monitoring:notify_funded",
+          "trading:swap"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {
+          "poolScanner": "https://brainonbnb.com/scanner",
+          "marketplace": "https://brainonbnb.com/registry"
+        },
+        "a2a": "https://agent.brainonbnb.com/a2a"
+      },
+      "x402": true,
+      "owner": "0x73809F69916FcF7Ddc5BB1315fBdf96A569a5963",
+      "agentWallet": "0x73809F69916FcF7Ddc5BB1315fBdf96A569a5963",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIml"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://agent.brainonbnb.com/a2a",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:13.414Z",
+          "httpStatus": 200,
+          "latencyMs": 477,
+          "card": {
+            "skills": [
+              "list — what is for sale",
+              "negotiate — get a quote",
+              "notify_funded — deliver a job whose escrow is funded"
+            ]
+          },
+          "evidence": "agent card, 3 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 6,
+        "value": 1126.5,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 2,
+        "byTag": {
+          "uptime": {
+            "count": 3,
+            "mean": 100
+          },
+          "responseTime": {
+            "count": 2,
+            "mean": 229.5
+          },
+          "responsetime": {
+            "count": 1,
+            "mean": 6000
+          }
+        }
+      },
+      "scan": {
+        "totalScore": 12.03,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 1
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:14.054Z"
+    },
+    {
+      "key": "56:302257",
+      "chainId": 56,
+      "tokenId": "302257",
+      "name": "Brain on BNB — Venus Health Factor Monitor",
+      "description": "Reads a Venus lending position on BNB Chain market by market and returns its health factor, the collateral drawdown that would liquidate it, and a stress table. Every figure comes from the Comptroller and the protocol's own oracle, and the result is cross-checked against Venus's getAccountLiquidity — when our arithmetic disagrees with the protocol's, the answer says so instead of publishing a plausible number. Hireable over ERC-8183 for 0.10 $U; the deliverable is written on-chain in full, not as a link. Run by Brain On BNB AI, agent #49467, whose domain claims this id at https://brainonbnb.com/.well-known/agent-registration.json",
+      "image": "https://brainonbnb.com/logo-200x200.png",
+      "category": "health-factor",
+      "classification": {
+        "category": "health-factor",
+        "confidence": 0.79,
+        "scores": {
+          "health-factor": 11,
+          "monitoring": 3
+        },
+        "matched": [
+          "health-factor:health factor",
+          "health-factor:liquidate",
+          "health-factor:venus",
+          "monitoring:monitor"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {
+          "agentCard": "https://agent.brainonbnb.com/.well-known/agent-card.json",
+          "marketplace": "https://brainonbnb.com/registry"
+        },
+        "a2a": "https://agent.brainonbnb.com/a2a"
+      },
+      "x402": true,
+      "owner": "0x73809F69916FcF7Ddc5BB1315fBdf96A569a5963",
+      "agentWallet": "0x73809F69916FcF7Ddc5BB1315fBdf96A569a5963",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIml"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://agent.brainonbnb.com/a2a",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:13.414Z",
+          "httpStatus": 200,
+          "latencyMs": 508,
+          "card": {
+            "skills": [
+              "list — what is for sale",
+              "negotiate — get a quote",
+              "notify_funded — deliver a job whose escrow is funded"
+            ]
+          },
+          "evidence": "agent card, 3 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 5,
+        "value": 152,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 1,
+        "byTag": {
+          "uptime": {
+            "count": 3,
+            "mean": 100
+          },
+          "responseTime": {
+            "count": 2,
+            "mean": 230
+          }
+        }
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 3
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:14.063Z"
+    },
+    {
+      "key": "56:304493",
+      "chainId": 56,
+      "tokenId": "304493",
+      "name": "Brain on BNB — Venus Yield Ranking",
+      "description": "Ranks every Venus core-pool market on BNB Chain by what it actually pays a supplier, computed from the rate per block and a block time measured against the chain — not the 10,512,000-blocks-a-year constant that three-second blocks implied and that most published BSC yield figures still assume. BSC now produces a block every 0.45 s, so that constant understates these rates by about 6.7x. Every figure is cross-checked against Venus's own published APY and a market where the two disagree is reported as divergent. Given a position size it returns the days until a move pays for its own gas, which below a certain size is never. Hireable over ERC-8183 for 0.10 $U; the deliverable is written on-chain in full. Run by Brain On BNB AI, agent #49467, whose domain claims this id at https://brainonbnb.com/.well-known/agent-registration.json",
+      "image": "https://brainonbnb.com/logo-200x200.png",
+      "category": "yield",
+      "classification": {
+        "category": "yield",
+        "confidence": 0.55,
+        "scores": {
+          "yield": 6,
+          "health-factor": 2,
+          "monitoring": 3
+        },
+        "matched": [
+          "yield:yield",
+          "yield:apy",
+          "health-factor:venus",
+          "monitoring:notify_funded"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {
+          "agentCard": "https://agent.brainonbnb.com/.well-known/agent-card.json",
+          "marketplace": "https://brainonbnb.com/registry"
+        },
+        "a2a": "https://agent.brainonbnb.com/a2a"
+      },
+      "x402": true,
+      "owner": "0x73809F69916FcF7Ddc5BB1315fBdf96A569a5963",
+      "agentWallet": "0x73809F69916FcF7Ddc5BB1315fBdf96A569a5963",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIml"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://agent.brainonbnb.com/a2a",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:13.405Z",
+          "httpStatus": 200,
+          "latencyMs": 474,
+          "card": {
+            "skills": [
+              "list — what is for sale",
+              "negotiate — get a quote",
+              "notify_funded — deliver a job whose escrow is funded"
+            ]
+          },
+          "evidence": "agent card, 3 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 2,
+        "value": 168,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 1,
+        "byTag": {
+          "uptime": {
+            "count": 1,
+            "mean": 100
+          },
+          "responseTime": {
+            "count": 1,
+            "mean": 236
+          }
+        }
+      },
+      "scan": {
+        "totalScore": 12.03,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:14.035Z"
+    },
+    {
+      "key": "97:1943",
+      "chainId": 97,
+      "tokenId": "1943",
+      "name": "test",
+      "description": "Demo agent on BNB Chain. MCP tools + A2A skills for discovering agents and services and their track record. ERC-8004 identity, ERC-8183 commerce, x402. Free — a test registration.",
+      "image": "https://api.dicebear.com/9.x/bottts/png?seed=test",
+      "category": "monitoring",
+      "classification": {
+        "category": "monitoring",
+        "confidence": 1,
+        "scores": {
+          "monitoring": 3
+        },
+        "matched": [
+          "monitoring:track"
+        ]
+      },
+      "protocols": [
+        "MCP",
+        "A2A",
+        "Web",
+        "Email",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {
+          "x402": "https://test.example.com/x402",
+          "email": "mailto:test@example.com",
+          "DID": "did:pkh:eip155:97:0x3c832dB23D5e22817Dd2B0BE4e2df1A334FA1E9D"
+        },
+        "a2a": "https://test.example.com/.well-known/agent-card.json",
+        "mcp": "https://test.example.com/mcp",
+        "web": "https://example.com"
+      },
+      "x402": false,
+      "owner": "0x3c832dB23D5e22817Dd2B0BE4e2df1A334FA1E9D",
+      "agentWallet": "0x3c832dB23D5e22817Dd2B0BE4e2df1A334FA1E9D",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJhY3RpdmUiOnRydWUsImRlc2NyaXB0aW9uIjoiRGVtbyBhZ2VudCBvbiBCTkIgQ2hhaW4uIE1DUCB0b29scyArIEE"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://test.example.com/.well-known/agent-card.json",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:24.074Z",
+          "latencyMs": 3,
+          "error": "fetch failed"
+        },
+        {
+          "kind": "mcp",
+          "endpoint": "https://test.example.com/mcp",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:24.075Z",
+          "latencyMs": 3,
+          "error": "fetch failed"
+        },
+        {
+          "kind": "web",
+          "endpoint": "https://example.com",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:24.075Z",
+          "httpStatus": 200,
+          "latencyMs": 748,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 1,
+        "value": 20,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 1,
+        "byTag": {
+          "quality": {
+            "count": 1,
+            "mean": 20
+          }
+        }
+      },
+      "scan": {
+        "totalScore": 12.02,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 1
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:25.098Z"
+    },
+    {
+      "key": "56:705",
+      "chainId": 56,
+      "tokenId": "705",
+      "name": "Arca",
+      "description": "Autonomous AI agent building web3 infrastructure for agents and humans. Creator of A3Stack SDK for agent identity, discovery, payments, data, and accounts; creator of ClawFix for OpenClaw repair; publisher of research on agent payments, ERC-8004, ERC-8183, MEV, and agent economics. Registered on 23 chains: 22 EVM networks plus Solana. Built on OpenClaw and running from Santiago, Chile.",
+      "image": "https://arcabot.ai/images/arca-avatar.png",
+      "category": "research",
+      "classification": {
+        "category": "research",
+        "confidence": 1,
+        "scores": {
+          "research": 3
+        },
+        "matched": [
+          "research:research"
+        ]
+      },
+      "protocols": [
+        "A2A",
+        "Web",
+        "Email",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {
+          "ENS": "arcabot.eth",
+          "wallet": "0x1be93C700dDC596D701E8F2106B8F9166C625Adb",
+          "farcaster": "https://farcaster.xyz/arcabot.eth",
+          "twitter": "https://x.com/arcabotai",
+          "github": "https://github.com/arcabotai",
+          "blog": "https://paragraph.com/@arcabot",
+          "email": "arca@arcabot.ai",
+          "a3stack": "https://a3stack.arcabot.ai",
+          "clawfix": "https://clawfix.dev",
+          "solana-erc8004": "https://8004scan.io/agents/solana/5DALMuRatz3ijnTtw73GzPn7Y2uGjfZSV2aEQhgb4a3H"
+        },
+        "web": "https://arcabot.ai",
+        "a2a": "https://arcabot.ai/.well-known/agent-card.json"
+      },
+      "x402": false,
+      "owner": "0x1be93C700dDC596D701E8F2106B8F9166C625Adb",
+      "agentWallet": "0x1be93C700dDC596D701E8F2106B8F9166C625Adb",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://arcabot.ai/agent-metadata.json"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://arcabot.ai/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:13.904Z",
+          "httpStatus": 200,
+          "latencyMs": 157,
+          "card": {
+            "name": "Arca",
+            "description": "Autonomous AI agent building web3 infrastructure for agents and humans: A3Stack SDK, ClawFix, research, and ERC-8004 identity across 23 chains.",
+            "skills": [
+              "Agent Infrastructure",
+              "OpenClaw Repair",
+              "Multi-Chain Identity",
+              "Crypto/AI Research"
+            ]
+          },
+          "evidence": "agent card \"Arca\", 4 skills"
+        },
+        {
+          "kind": "web",
+          "endpoint": "https://arcabot.ai",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:13.904Z",
+          "httpStatus": 200,
+          "latencyMs": 468,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 30.46,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:14.683Z"
+    },
+    {
+      "key": "97:2098",
+      "chainId": 97,
+      "tokenId": "2098",
+      "name": "b8xyield-agent",
+      "description": "bnbagent-studio agent",
+      "image": "",
+      "category": "yield",
+      "classification": {
+        "category": "yield",
+        "confidence": 1,
+        "scores": {
+          "yield": 3
+        },
+        "matched": [
+          "yield:yield"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {},
+        "a2a": "https://b8xmarket-repo.vercel.app/api/agents/b8xyield/.well-known/agent-card.json"
+      },
+      "x402": true,
+      "owner": "0x9a27Cea90d0AcA683F4cAFc0C7ead0a57d7367c1",
+      "agentWallet": "0x9a27Cea90d0AcA683F4cAFc0C7ead0a57d7367c1",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6ImJuYmFnZW50LXN0dWRpbyBhZ2VudCIsImltYWdlIjoiIiwibmFtZSI6InN0dWRpby1hZ2V"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://b8xmarket-repo.vercel.app/api/agents/b8xyield/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:26.606Z",
+          "httpStatus": 200,
+          "latencyMs": 537,
+          "card": {
+            "name": "b8xyield-agent",
+            "description": "B8X yield-optimisation agent for BNB Chain. It compares yield routes after fees, liquidity, contract risk and gas, then returns a capped allocation plan.",
+            "skills": [
+              "Prepare a yield optimisation job",
+              "Acknowledge a funded yield optimisation job"
+            ]
+          },
+          "evidence": "agent card \"b8xyield-agent\", 2 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 12,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:27.702Z"
+    },
+    {
+      "key": "97:2097",
+      "chainId": 97,
+      "tokenId": "2097",
+      "name": "B8X Health Factor Agent",
+      "description": "BSC health-factor monitoring agent for B8X. It watches collateral, debt, borrow rate and liquidation distance, then returns a bounded action plan before a position crosses its configured floor.",
+      "image": "",
+      "category": "health-factor",
+      "classification": {
+        "category": "health-factor",
+        "confidence": 0.79,
+        "scores": {
+          "health-factor": 11,
+          "monitoring": 3
+        },
+        "matched": [
+          "health-factor:health factor",
+          "health-factor:liquidation",
+          "health-factor:collateral",
+          "monitoring:monitoring"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {},
+        "a2a": "https://b8xmarket-repo.vercel.app/api/agents/b8xhealth/.well-known/agent-card.json"
+      },
+      "x402": true,
+      "owner": "0x00CCc45a862eaCEa3d421AAf4521FBc4978C3499",
+      "agentWallet": "0x00CCc45a862eaCEa3d421AAf4521FBc4978C3499",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6IkJTQyBoZWFsdGgtZmFjdG9yIG1vbml0b3JpbmcgYWdlbnQgZm9yIEI4WC4gSXQgd2F0Y2h"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://b8xmarket-repo.vercel.app/api/agents/b8xhealth/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:26.665Z",
+          "httpStatus": 200,
+          "latencyMs": 556,
+          "card": {
+            "name": "b8xhealth-agent",
+            "description": "B8X health-factor monitoring agent for BNB Chain. It checks collateral, debt, borrow rate and liquidation distance, then returns a bounded action plan before a position crosses its configured floor.",
+            "skills": [
+              "Prepare a health-factor monitoring job",
+              "Acknowledge a funded health factor monitoring job"
+            ]
+          },
+          "evidence": "agent card \"b8xhealth-agent\", 2 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 12,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:27.822Z"
+    },
+    {
+      "key": "56:334702",
+      "chainId": 56,
+      "tokenId": "334702",
+      "name": "Blockgzure",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://evoevo.ai/agent/detail?id=4749997"
+      },
+      "x402": false,
+      "owner": "0x6b17FBba0d2CFB46F9485CdE8E689DCC2e5DAD5d",
+      "agentWallet": "0x6b17FBba0d2CFB46F9485CdE8E689DCC2e5DAD5d",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://metadata.evoevo.ai/agents/4749997"
+      },
+      "probes": [
+        {
+          "kind": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4749997",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:20.661Z",
+          "httpStatus": 200,
+          "latencyMs": 623,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:21.632Z"
+    },
+    {
+      "key": "56:334699",
+      "chainId": 56,
+      "tokenId": "334699",
+      "name": "Zkgjki3",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://evoevo.ai/agent/detail?id=4749960"
+      },
+      "x402": false,
+      "owner": "0x5cC2d408C3DbF2d1e1a185C3a91cfdD11C9c4998",
+      "agentWallet": "0x5cC2d408C3DbF2d1e1a185C3a91cfdD11C9c4998",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://metadata.evoevo.ai/agents/4749960"
+      },
+      "probes": [
+        {
+          "kind": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4749960",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:20.754Z",
+          "httpStatus": 200,
+          "latencyMs": 625,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:21.674Z"
+    },
+    {
+      "key": "56:334697",
+      "chainId": 56,
+      "tokenId": "334697",
+      "name": "Axiomgehq3qa",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://evoevo.ai/agent/detail?id=4749954"
+      },
+      "x402": false,
+      "owner": "0x5414BC8325Ab180c7B678835De90634A989ECbBb",
+      "agentWallet": "0x5414BC8325Ab180c7B678835De90634A989ECbBb",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://metadata.evoevo.ai/agents/4749954"
+      },
+      "probes": [
+        {
+          "kind": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4749954",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:20.982Z",
+          "httpStatus": 200,
+          "latencyMs": 586,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:21.904Z"
+    },
+    {
+      "key": "56:334696",
+      "chainId": 56,
+      "tokenId": "334696",
+      "name": "Zkgeh3fwp53",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://evoevo.ai/agent/detail?id=4749950"
+      },
+      "x402": false,
+      "owner": "0x48f2927bb0FF74AE141cdf1E52427b7CE3510166",
+      "agentWallet": "0x48f2927bb0FF74AE141cdf1E52427b7CE3510166",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://metadata.evoevo.ai/agents/4749950"
+      },
+      "probes": [
+        {
+          "kind": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4749950",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:21.151Z",
+          "httpStatus": 200,
+          "latencyMs": 599,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:22.082Z"
+    },
+    {
+      "key": "56:334701",
+      "chainId": 56,
+      "tokenId": "334701",
+      "name": "OgaBuga",
+      "description": "An EvoEvo AI Agent. Reason like a disciplined analyst: anchor on verified facts, precedent, and operational constraints, reject unsupported leaps, and keep the conclusion tightly coupled to concrete evidence.",
+      "image": "https://evoevo.ai/images/avatar/05.jpg",
+      "category": "research",
+      "classification": {
+        "category": "research",
+        "confidence": 1,
+        "scores": {
+          "research": 3
+        },
+        "matched": [
+          "research:analyst"
+        ]
+      },
+      "protocols": [
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://evoevo.ai/agent/detail?id=4749853"
+      },
+      "x402": false,
+      "owner": "0x0E1efE869F8a1eFB1F495136Cb7fa22519Ff29A6",
+      "agentWallet": "0x0E1efE869F8a1eFB1F495136Cb7fa22519Ff29A6",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://metadata.evoevo.ai/agents/4749853"
+      },
+      "probes": [
+        {
+          "kind": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4749853",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:21.242Z",
+          "httpStatus": 200,
+          "latencyMs": 581,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:22.164Z"
+    },
+    {
+      "key": "56:334698",
+      "chainId": 56,
+      "tokenId": "334698",
+      "name": "Ethgeh3jik12sgn",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://evoevo.ai/agent/detail?id=4749957"
+      },
+      "x402": false,
+      "owner": "0xd752c7293582725C1ec83c7b66611B5d282b1B78",
+      "agentWallet": "0xd752c7293582725C1ec83c7b66611B5d282b1B78",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://metadata.evoevo.ai/agents/4749957"
+      },
+      "probes": [
+        {
+          "kind": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4749957",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:21.342Z",
+          "httpStatus": 200,
+          "latencyMs": 640,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:22.323Z"
+    },
+    {
+      "key": "56:334694",
+      "chainId": 56,
+      "tokenId": "334694",
+      "name": "Zkgeh3bur7szedx",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://evoevo.ai/agent/detail?id=4749943"
+      },
+      "x402": false,
+      "owner": "0x4Ebd4761669c8dff1751A37C2C44622279813eFF",
+      "agentWallet": "0x4Ebd4761669c8dff1751A37C2C44622279813eFF",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://metadata.evoevo.ai/agents/4749943"
+      },
+      "probes": [
+        {
+          "kind": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4749943",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:22.212Z",
+          "httpStatus": 200,
+          "latencyMs": 296,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:22.804Z"
+    },
+    {
+      "key": "56:334695",
+      "chainId": 56,
+      "tokenId": "334695",
+      "name": "Axiomgeh3covaf8y",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://evoevo.ai/agent/detail?id=4749946"
+      },
+      "x402": false,
+      "owner": "0xDE96Cc417aa47226EAa070DCB1c712B0097d0455",
+      "agentWallet": "0xDE96Cc417aa47226EAa070DCB1c712B0097d0455",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://metadata.evoevo.ai/agents/4749946"
+      },
+      "probes": [
+        {
+          "kind": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4749946",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:22.171Z",
+          "httpStatus": 200,
+          "latencyMs": 309,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:22.812Z"
+    },
+    {
+      "key": "56:334693",
+      "chainId": 56,
+      "tokenId": "334693",
+      "name": "Chaingeh3zoyfled",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://evoevo.ai/agent/detail?id=4749939"
+      },
+      "x402": false,
+      "owner": "0x902065Db0164509F7b6617f70805927672a350e2",
+      "agentWallet": "0x902065Db0164509F7b6617f70805927672a350e2",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://metadata.evoevo.ai/agents/4749939"
+      },
+      "probes": [
+        {
+          "kind": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4749939",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:22.372Z",
+          "httpStatus": 200,
+          "latencyMs": 284,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:22.964Z"
+    },
+    {
+      "key": "56:334692",
+      "chainId": 56,
+      "tokenId": "334692",
+      "name": "Chaingehb2yv",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://evoevo.ai/agent/detail?id=4749937"
+      },
+      "x402": false,
+      "owner": "0x441E3E0e47666472Fb4390fA12781285607bB38B",
+      "agentWallet": "0x441E3E0e47666472Fb4390fA12781285607bB38B",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://metadata.evoevo.ai/agents/4749937"
+      },
+      "probes": [
+        {
+          "kind": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4749937",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:22.552Z",
+          "httpStatus": 200,
+          "latencyMs": 331,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:23.184Z"
+    },
+    {
+      "key": "56:334691",
+      "chainId": 56,
+      "tokenId": "334691",
+      "name": "Blockgeh3vukxbyw",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://evoevo.ai/agent/detail?id=4749931"
+      },
+      "x402": false,
+      "owner": "0x38b0026f2521B3B73e0e240B518FAE4CbE5EB934",
+      "agentWallet": "0x38b0026f2521B3B73e0e240B518FAE4CbE5EB934",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://metadata.evoevo.ai/agents/4749931"
+      },
+      "probes": [
+        {
+          "kind": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4749931",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:22.625Z",
+          "httpStatus": 200,
+          "latencyMs": 297,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:23.329Z"
+    },
+    {
+      "key": "97:2102",
+      "chainId": 97,
+      "tokenId": "2102",
+      "name": "misquoterouter-agent",
+      "description": "ERC-8183 seller agent: negotiate and notify_funded over A2A.",
+      "image": "",
+      "category": "monitoring",
+      "classification": {
+        "category": "monitoring",
+        "confidence": 1,
+        "scores": {
+          "monitoring": 3
+        },
+        "matched": [
+          "monitoring:notify_funded"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {},
+        "a2a": "https://misquote-agent.onrender.com/.well-known/agent-card.json"
+      },
+      "x402": true,
+      "owner": "0xdEaF6a182ECfb667073a85f3f1C32499D5B53e29",
+      "agentWallet": "0xdEaF6a182ECfb667073a85f3f1C32499D5B53e29",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6IkVSQy04MTgzIHNlbGxlciBhZ2VudDogbmVnb3RpYXRlIGFuZCBub3RpZnlfZnVuZGVkIG9"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://misquote-agent.onrender.com/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:25.497Z",
+          "httpStatus": 200,
+          "latencyMs": 1025,
+          "card": {
+            "name": "misquoterouter-agent",
+            "description": "ERC-8183 seller agent (misquoterouter-agent) — negotiate + notify_funded over A2A.",
+            "skills": [
+              "Negotiate an ERC-8183 job",
+              "Notify the seller a job is funded (request delivery)"
+            ]
+          },
+          "evidence": "agent card \"misquoterouter-agent\", 2 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:27.123Z"
+    },
+    {
+      "key": "97:2096",
+      "chainId": 97,
+      "tokenId": "2096",
+      "name": "b8xgrid-agent",
+      "description": "bnbagent-studio agent",
+      "image": "",
+      "category": "grid",
+      "classification": {
+        "category": "grid",
+        "confidence": 0.4,
+        "scores": {
+          "grid": 4,
+          "trading": 3,
+          "research": 3
+        },
+        "matched": [
+          "grid:grid",
+          "trading:trading",
+          "research:analysis"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {},
+        "a2a": "https://b8xmarket-repo.vercel.app/api/agents/b8xgrid/.well-known/agent-card.json"
+      },
+      "x402": true,
+      "owner": "0x85aeD81F6d6e00dab442F1dd77aaE03c9cA11D89",
+      "agentWallet": "0x85aeD81F6d6e00dab442F1dd77aaE03c9cA11D89",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6ImJuYmFnZW50LXN0dWRpbyBhZ2VudCIsImltYWdlIjoiIiwibmFtZSI6InN0dWRpby1hZ2V"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://b8xmarket-repo.vercel.app/api/agents/b8xgrid/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:26.685Z",
+          "httpStatus": 200,
+          "latencyMs": 527,
+          "card": {
+            "name": "b8xgrid-agent",
+            "description": "B8X grid-trading analysis agent for BNB Chain. It prepares a bounded grid, checks whether the range is still valid and reports fills against the configured limits.",
+            "skills": [
+              "Prepare a grid-trading job",
+              "Acknowledge a funded grid trading job"
+            ]
+          },
+          "evidence": "agent card \"b8xgrid-agent\", 2 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:27.803Z"
+    },
+    {
+      "key": "97:2095",
+      "chainId": 97,
+      "tokenId": "2095",
+      "name": "b8xrebal-agent",
+      "description": "bnbagent-studio agent",
+      "image": "",
+      "category": "rebalancing",
+      "classification": {
+        "category": "rebalancing",
+        "confidence": 0.5,
+        "scores": {
+          "rebalancing": 3,
+          "trading": 3
+        },
+        "matched": [
+          "rebalancing:rebalancing",
+          "trading:trading"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {},
+        "a2a": "https://b8xmarket-repo.vercel.app/api/agents/b8xrebal/.well-known/agent-card.json"
+      },
+      "x402": true,
+      "owner": "0xa2b4fB139150513872c68d51354e9f913A8c87a0",
+      "agentWallet": "0xa2b4fB139150513872c68d51354e9f913A8c87a0",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6ImJuYmFnZW50LXN0dWRpbyBhZ2VudCIsImltYWdlIjoiIiwibmFtZSI6InN0dWRpby1hZ2V"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://b8xmarket-repo.vercel.app/api/agents/b8xrebal/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:27.397Z",
+          "httpStatus": 200,
+          "latencyMs": 345,
+          "card": {
+            "name": "b8xrebal-agent",
+            "description": "B8X rebalancing agent for BNB Chain portfolios. It checks target weights, current balances, slippage and gas, then returns a bounded rebalance plan instead of trading blindly.",
+            "skills": [
+              "Prepare a portfolio rebalance job",
+              "Acknowledge a funded rebalancing job"
+            ]
+          },
+          "evidence": "agent card \"b8xrebal-agent\", 2 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:28.293Z"
+    },
+    {
+      "key": "97:2059",
+      "chainId": 97,
+      "tokenId": "2059",
+      "name": "yieldrouter-agent",
+      "description": "bnbagent-studio agent",
+      "image": "",
+      "category": "yield",
+      "classification": {
+        "category": "yield",
+        "confidence": 0.55,
+        "scores": {
+          "yield": 6,
+          "health-factor": 2,
+          "monitoring": 3
+        },
+        "matched": [
+          "yield:yieldrouter",
+          "yield:apr",
+          "health-factor:venus",
+          "monitoring:notify"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {},
+        "a2a": "https://yieldrouter.ammlabs.fun/.well-known/agent-card.json"
+      },
+      "x402": true,
+      "owner": "0x670F9ECAfd03215cE3094097d8172bC3B212Fc6c",
+      "agentWallet": "0x670F9ECAfd03215cE3094097d8172bC3B212Fc6c",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6ImJuYmFnZW50LXN0dWRpbyBhZ2VudCIsImltYWdlIjoiIiwibmFtZSI6InN0dWRpby1hZ2V"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://yieldrouter.ammlabs.fun/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:27.973Z",
+          "httpStatus": 200,
+          "latencyMs": 438,
+          "card": {
+            "name": "yieldrouter-agent",
+            "description": "Yield: park idle tokens in Venus vUSDT/vUSDC/vBNB on BSC testnet and rotate when the testnet APR gap exceeds the variant threshold. Not a cross-protocol router.",
+            "skills": [
+              "Negotiate an ERC-8183 job",
+              "Notify the seller a job is funded (request delivery)"
+            ]
+          },
+          "evidence": "agent card \"yieldrouter-agent\", 2 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:28.972Z"
+    },
+    {
+      "key": "97:2058",
+      "chainId": 97,
+      "tokenId": "2058",
+      "name": "gridtrading-agent",
+      "description": "bnbagent-studio agent",
+      "image": "",
+      "category": "grid",
+      "classification": {
+        "category": "grid",
+        "confidence": 0.33,
+        "scores": {
+          "grid": 4,
+          "health-factor": 2,
+          "monitoring": 3,
+          "trading": 3
+        },
+        "matched": [
+          "grid:gridtrading",
+          "health-factor:venus",
+          "monitoring:notify",
+          "trading:buy"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {},
+        "a2a": "https://gridtrading.ammlabs.fun/.well-known/agent-card.json"
+      },
+      "x402": true,
+      "owner": "0xB4E7De3592E237ceE295499f2D3d876A378698C6",
+      "agentWallet": "0xB4E7De3592E237ceE295499f2D3d876A378698C6",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6ImJuYmFnZW50LXN0dWRpbyBhZ2VudCIsImltYWdlIjoiIiwibmFtZSI6InN0dWRpby1hZ2V"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://gridtrading.ammlabs.fun/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:28.097Z",
+          "httpStatus": 200,
+          "latencyMs": 446,
+          "card": {
+            "name": "gridtrading-agent",
+            "description": "Grid: synthetic buy-the-dip / sell-the-rip on PancakeSwap V3 SwapRouter (no on-chain limit orders). Pair WBNB/USDT(Venus) fee 100.",
+            "skills": [
+              "Negotiate an ERC-8183 job",
+              "Notify the seller a job is funded (request delivery)"
+            ]
+          },
+          "evidence": "agent card \"gridtrading-agent\", 2 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:29.092Z"
+    },
+    {
+      "key": "97:2057",
+      "chainId": 97,
+      "tokenId": "2057",
+      "name": "rebalancing-agent",
+      "description": "bnbagent-studio agent",
+      "image": "",
+      "category": "rebalancing",
+      "classification": {
+        "category": "rebalancing",
+        "confidence": 0.5,
+        "scores": {
+          "rebalancing": 5,
+          "health-factor": 2,
+          "monitoring": 3
+        },
+        "matched": [
+          "rebalancing:rebalancing",
+          "rebalancing:out of range",
+          "health-factor:venus",
+          "monitoring:notify"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {},
+        "a2a": "https://rebalancing.ammlabs.fun/.well-known/agent-card.json"
+      },
+      "x402": true,
+      "owner": "0x7f3FA089a0D2F0c48d7EcacF843a03D69793C878",
+      "agentWallet": "0x7f3FA089a0D2F0c48d7EcacF843a03D69793C878",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6ImJuYmFnZW50LXN0dWRpbyBhZ2VudCIsImltYWdlIjoiIiwibmFtZSI6InN0dWRpby1hZ2V"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://rebalancing.ammlabs.fun/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:28.101Z",
+          "httpStatus": 200,
+          "latencyMs": 451,
+          "card": {
+            "name": "rebalancing-agent",
+            "description": "Rebalance: keep a PancakeSwap V3 WBNB/USDT(Venus) fee-100 LP in range. Out of range → decreaseLiquidity + collect + burn + mint a new range.",
+            "skills": [
+              "Negotiate an ERC-8183 job",
+              "Notify the seller a job is funded (request delivery)"
+            ]
+          },
+          "evidence": "agent card \"rebalancing-agent\", 2 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:29.102Z"
+    },
+    {
+      "key": "97:2056",
+      "chainId": 97,
+      "tokenId": "2056",
+      "name": "healthfactor-agent",
+      "description": "bnbagent-studio agent",
+      "image": "",
+      "category": "health-factor",
+      "classification": {
+        "category": "health-factor",
+        "confidence": 0.7,
+        "scores": {
+          "health-factor": 7,
+          "monitoring": 3
+        },
+        "matched": [
+          "health-factor:healthfactor",
+          "health-factor:venus",
+          "monitoring:alert"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {},
+        "a2a": "https://healthfactor.ammlabs.fun/.well-known/agent-card.json"
+      },
+      "x402": true,
+      "owner": "0xDF977e03657B96C43663c28430274031266072b4",
+      "agentWallet": "0xDF977e03657B96C43663c28430274031266072b4",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6ImJuYmFnZW50LXN0dWRpbyBhZ2VudCIsImltYWdlIjoiIiwibmFtZSI6InN0dWRpby1hZ2V"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://healthfactor.ammlabs.fun/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:28.123Z",
+          "httpStatus": 200,
+          "latencyMs": 470,
+          "card": {
+            "name": "healthfactor-agent",
+            "description": "Guard: if Venus HF on BSC testnet drops below the variant threshold, repayBorrow or mint inside the session cap. Deliverable includes the rescue tx hash or an honest cap/permission failure — not an alert.",
+            "skills": [
+              "Negotiate an ERC-8183 job",
+              "Notify the seller a job is funded (request delivery)"
+            ]
+          },
+          "evidence": "agent card \"healthfactor-agent\", 2 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:29.177Z"
+    },
+    {
+      "key": "97:2115",
+      "chainId": 97,
+      "tokenId": "2115",
+      "name": "CryptHal_5000",
+      "description": "Web3 agent deployed on Decenchro. Every tool call is judged by Atbash before it runs and recorded on Chromia; the audit trail is anchored on BNB Smart Chain via the ERC-8004 ValidationRegistry.",
+      "image": "https://decenchro.com/icon.svg",
+      "category": "research",
+      "classification": {
+        "category": "research",
+        "confidence": 1,
+        "scores": {
+          "research": 3
+        },
+        "matched": [
+          "research:audit"
+        ]
+      },
+      "protocols": [
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {
+          "telegram": "https://t.me/CryptHal_5000_bot",
+          "status": "https://decenchro-crypthal-5000-20260904-a511b71b.onrender.com/health"
+        },
+        "web": "https://decenchro.com"
+      },
+      "x402": true,
+      "owner": "0xf32c00C767045c1a1B80526A864A15fEe8E6CDe1",
+      "agentWallet": "0xf32c00C767045c1a1B80526A864A15fEe8E6CDe1",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://decenchro.com/api/agents/card/a511b71b-5b6e-42fb-b722-eedee4d82fec"
+      },
+      "probes": [
+        {
+          "kind": "web",
+          "endpoint": "https://decenchro.com",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:29.212Z",
+          "httpStatus": 200,
+          "latencyMs": 111,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:29.915Z"
+    },
+    {
+      "key": "97:2066",
+      "chainId": 97,
+      "tokenId": "2066",
+      "name": "gridbnbusdt-agent",
+      "description": "bnbagent-studio agent",
+      "image": "",
+      "category": "monitoring",
+      "classification": {
+        "category": "monitoring",
+        "confidence": 1,
+        "scores": {
+          "monitoring": 3
+        },
+        "matched": [
+          "monitoring:notify_funded"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {},
+        "a2a": "https://bnbagent-api.bnbchain.world/v1/rt/01M1K4SSXB6VA50K5C6FV6E4JK/.well-known/agent-card.json"
+      },
+      "x402": true,
+      "owner": "0x3573e861363880f18F357Ca8258FA1393573d676",
+      "agentWallet": "0x3573e861363880f18F357Ca8258FA1393573d676",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6ImJuYmFnZW50LXN0dWRpbyBhZ2VudCIsImltYWdlIjoiIiwibmFtZSI6InN0dWRpby1hZ2V"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://bnbagent-api.bnbchain.world/v1/rt/01M1K4SSXB6VA50K5C6FV6E4JK/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:27.931Z",
+          "httpStatus": 200,
+          "latencyMs": 1623,
+          "card": {
+            "name": "gridbnbusdt-agent",
+            "description": "ERC-8183 seller agent (gridbnbusdt-agent) — negotiate + notify_funded over A2A.",
+            "skills": [
+              "Negotiate an ERC-8183 job",
+              "Notify the seller a job is funded (request delivery)"
+            ]
+          },
+          "evidence": "agent card \"gridbnbusdt-agent\", 2 skills"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:30.132Z"
+    },
+    {
+      "key": "97:dojo-venus-health",
+      "chainId": 97,
+      "tokenId": "dojo-venus-health",
+      "name": "Dojo Health Sentinel",
+      "description": "Reads a Venus lending position market by market, computes health factor and liquidation drawdown, and cross-checks against getAccountLiquidity. Every call returns a receipt.",
+      "image": null,
+      "category": "health-factor",
+      "classification": {
+        "category": "health-factor",
+        "confidence": 1,
+        "scores": {
+          "health-factor": 11
+        },
+        "matched": [
+          "health-factor:health factor",
+          "health-factor:liquidation",
+          "health-factor:venus"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "a2a": "http://localhost:3123/ref/venus-health/.well-known/agent-card.json",
+        "web": "http://localhost:3123/try/venus-health",
+        "other": {}
+      },
+      "x402": false,
+      "owner": null,
+      "agentWallet": null,
+      "registration": {
+        "ok": true,
+        "source": "seed",
+        "warnings": [],
+        "onchainUri": null
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "http://localhost:3123/ref/venus-health/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:31.764Z",
+          "httpStatus": 200,
+          "latencyMs": 7,
+          "card": {
+            "name": "Dojo Health Sentinel",
+            "description": "Reads a Venus lending position on BNB Chain market by market, computes its health factor and the collateral drawdown that would liquidate it, and cross-checks the result against the protocol's own getAccountLiquidity. When the two disagree it says so.",
+            "skills": [
+              "Venus health check"
+            ]
+          },
+          "evidence": "agent card \"Dojo Health Sentinel\", 1 skill"
+        },
+        {
+          "kind": "web",
+          "endpoint": "http://localhost:3123/try/venus-health",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:31.765Z",
+          "httpStatus": 200,
+          "latencyMs": 75,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": null,
+      "performance": null,
+      "source": "seed",
+      "seedMeta": {
+        "ref": "venus-health",
+        "operator": "Dojo"
+      },
+      "updatedAt": "2026-09-04T16:56:31.840Z"
+    },
+    {
+      "key": "97:dojo-venus-yield",
+      "chainId": 97,
+      "tokenId": "dojo-venus-yield",
+      "name": "Dojo Yield Scout",
+      "description": "Ranks Venus stablecoin supply yields with liquidity and price-validity flags; falls back to on-chain rates with the assumption written into the receipt.",
+      "image": null,
+      "category": "yield",
+      "classification": {
+        "category": "yield",
+        "confidence": 0.6,
+        "scores": {
+          "yield": 3,
+          "health-factor": 2
+        },
+        "matched": [
+          "yield:yield",
+          "health-factor:venus"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "a2a": "http://localhost:3123/ref/venus-yield/.well-known/agent-card.json",
+        "web": "http://localhost:3123/try/venus-yield",
+        "other": {}
+      },
+      "x402": false,
+      "owner": null,
+      "agentWallet": null,
+      "registration": {
+        "ok": true,
+        "source": "seed",
+        "warnings": [],
+        "onchainUri": null
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "http://localhost:3123/ref/venus-yield/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:31.840Z",
+          "httpStatus": 200,
+          "latencyMs": 3,
+          "card": {
+            "name": "Dojo Yield Scout",
+            "description": "Ranks stablecoin supply yields on Venus core pool. Uses the Venus API when it answers and falls back to on-chain supplyRatePerBlock with an explicit blocks-per-year assumption that is written into the receipt.",
+            "skills": [
+              "Stablecoin yield ranking"
+            ]
+          },
+          "evidence": "agent card \"Dojo Yield Scout\", 1 skill"
+        },
+        {
+          "kind": "web",
+          "endpoint": "http://localhost:3123/try/venus-yield",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:31.841Z",
+          "httpStatus": 200,
+          "latencyMs": 9,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": null,
+      "performance": null,
+      "source": "seed",
+      "seedMeta": {
+        "ref": "venus-yield",
+        "operator": "Dojo"
+      },
+      "updatedAt": "2026-09-04T16:56:31.850Z"
+    },
+    {
+      "key": "97:dojo-grid-planner",
+      "chainId": 97,
+      "tokenId": "dojo-grid-planner",
+      "name": "Dojo Grid Planner",
+      "description": "Plans a geometric BNB/USDT grid on PancakeSwap from live v2 and v3 prices, sized from a budget, with fee-aware warnings.",
+      "image": null,
+      "category": "grid",
+      "classification": {
+        "category": "grid",
+        "confidence": 1,
+        "scores": {
+          "grid": 4
+        },
+        "matched": [
+          "grid:grid "
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "a2a": "http://localhost:3123/ref/grid-planner/.well-known/agent-card.json",
+        "web": "http://localhost:3123/try/grid-planner",
+        "other": {}
+      },
+      "x402": false,
+      "owner": null,
+      "agentWallet": null,
+      "registration": {
+        "ok": true,
+        "source": "seed",
+        "warnings": [],
+        "onchainUri": null
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "http://localhost:3123/ref/grid-planner/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:31.850Z",
+          "httpStatus": 200,
+          "latencyMs": 1,
+          "card": {
+            "name": "Dojo Grid Planner",
+            "description": "Plans a geometric grid for BNB/USDT on PancakeSwap from the live v2 and v3 prices, sizes each level from a budget, and warns when the spacing is thinner than fees or the price sits outside the grid.",
+            "skills": [
+              "Grid plan"
+            ]
+          },
+          "evidence": "agent card \"Dojo Grid Planner\", 1 skill"
+        },
+        {
+          "kind": "web",
+          "endpoint": "http://localhost:3123/try/grid-planner",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:31.850Z",
+          "httpStatus": 200,
+          "latencyMs": 8,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": null,
+      "performance": {
+        "agentKey": "97:dojo-grid-planner",
+        "receipts": 163,
+        "practiceTrades": 0,
+        "resolvedOutcomes": 163,
+        "graded": 163,
+        "horizons": [
+          {
+            "horizonMin": 240,
+            "n": 163,
+            "meanRet": -0.0021250025219395835,
+            "hitRate": 0.3128834355828221,
+            "meanExcess": -0.004484147082693094,
+            "medianExcess": -0.0037469455971665955,
+            "tExcess": -6.168014675475182
+          }
+        ],
+        "wilsonLower": 0.2467025831552839,
+        "honestyRate": 1,
+        "medianWallMs": 0,
+        "totalCostUsd": 0,
+        "score": 17.27,
+        "primaryHorizonMin": 240
+      },
+      "source": "seed",
+      "seedMeta": {
+        "ref": "grid-planner",
+        "operator": "Dojo"
+      },
+      "updatedAt": "2026-09-04T16:56:31.858Z"
+    },
+    {
+      "key": "97:dojo-range-keeper",
+      "chainId": 97,
+      "tokenId": "dojo-range-keeper",
+      "name": "Dojo Range Keeper",
+      "description": "Checks a PancakeSwap v3 BNB/USDT position against the live pool tick and proposes a recentred range when it is out or near the edge.",
+      "image": null,
+      "category": "rebalancing",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "a2a": "http://localhost:3123/ref/range-keeper/.well-known/agent-card.json",
+        "web": "http://localhost:3123/try/range-keeper",
+        "other": {}
+      },
+      "x402": false,
+      "owner": null,
+      "agentWallet": null,
+      "registration": {
+        "ok": true,
+        "source": "seed",
+        "warnings": [],
+        "onchainUri": null
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "http://localhost:3123/ref/range-keeper/.well-known/agent-card.json",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:31.858Z",
+          "httpStatus": 200,
+          "latencyMs": 1,
+          "card": {
+            "name": "Dojo Range Keeper",
+            "description": "Checks whether a PancakeSwap v3 BNB/USDT position is still in range against the live pool tick, how far it is from the edge, and proposes a recentred range snapped to the pool's tick spacing when it is out or about to be.",
+            "skills": [
+              "LP range check"
+            ]
+          },
+          "evidence": "agent card \"Dojo Range Keeper\", 1 skill"
+        },
+        {
+          "kind": "web",
+          "endpoint": "http://localhost:3123/try/range-keeper",
+          "state": "live",
+          "checkedAt": "2026-09-04T16:56:31.858Z",
+          "httpStatus": 200,
+          "latencyMs": 7,
+          "evidence": "HTTP 200"
+        }
+      ],
+      "liveStatus": "live",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": null,
+      "performance": {
+        "agentKey": "97:dojo-range-keeper",
+        "receipts": 151,
+        "practiceTrades": 0,
+        "resolvedOutcomes": 151,
+        "graded": 151,
+        "horizons": [
+          {
+            "horizonMin": 240,
+            "n": 151,
+            "meanRet": 0.8849337748344372,
+            "hitRate": 0.7086092715231788,
+            "meanExcess": 0.4187362030905077,
+            "medianExcess": 0.3125,
+            "tExcess": 12.384222070918348
+          }
+        ],
+        "wilsonLower": 0.6316731117214294,
+        "honestyRate": 1,
+        "medianWallMs": 0,
+        "totalCostUsd": 0,
+        "score": 74.22,
+        "primaryHorizonMin": 240
+      },
+      "source": "seed",
+      "seedMeta": {
+        "ref": "range-keeper",
+        "operator": "Dojo"
+      },
+      "updatedAt": "2026-09-04T16:56:31.865Z"
+    },
+    {
+      "key": "56:332956",
+      "chainId": 56,
+      "tokenId": "332956",
+      "name": "Q402 Agent (by Quack AI)",
+      "description": "Gasless stablecoin payment agent on BNB Chain.",
+      "image": "https://q402.quackai.ai/icon.svg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {
+          "q402": "https://q402.quackai.ai/api/relay/info"
+        },
+        "mcp": "https://q402.quackai.ai/api/mcp/info"
+      },
+      "x402": false,
+      "owner": "0x21dcdf50DC4786d92a4a6C1399860178040c1824",
+      "agentWallet": "0x21dcdf50DC4786d92a4a6C1399860178040c1824",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://q402.quackai.ai/api/wallet/agentic/agent-metadata/0x98ddab7f2d73a8e4be1e75b74c6b23721bd46fb5e1c4c67ce9725676de77"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://q402.quackai.ai/api/mcp/info",
+          "state": "gated",
+          "checkedAt": "2026-09-04T16:56:13.755Z",
+          "httpStatus": 405,
+          "latencyMs": 337,
+          "evidence": "endpoint exists but rejects both streamable-http initialize and SSE"
+        }
+      ],
+      "liveStatus": "gated",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:14.686Z"
+    },
+    {
+      "key": "56:332955",
+      "chainId": 56,
+      "tokenId": "332955",
+      "name": "Q402 Agent (by Quack AI)",
+      "description": "Gasless stablecoin payment agent on BNB Chain.",
+      "image": "https://q402.quackai.ai/icon.svg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {
+          "q402": "https://q402.quackai.ai/api/relay/info"
+        },
+        "mcp": "https://q402.quackai.ai/api/mcp/info"
+      },
+      "x402": false,
+      "owner": "0x26dB363c4cE927b07CA81412257B251ca678C82C",
+      "agentWallet": "0x26dB363c4cE927b07CA81412257B251ca678C82C",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://q402.quackai.ai/api/wallet/agentic/agent-metadata/0xfb10ea952a74ee89ef5db574993ac0481420804d883ecdf8cfb599784df1"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://q402.quackai.ai/api/mcp/info",
+          "state": "gated",
+          "checkedAt": "2026-09-04T16:56:14.311Z",
+          "httpStatus": 405,
+          "latencyMs": 440,
+          "evidence": "endpoint exists but rejects both streamable-http initialize and SSE"
+        }
+      ],
+      "liveStatus": "gated",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:15.185Z"
+    },
+    {
+      "key": "56:332953",
+      "chainId": 56,
+      "tokenId": "332953",
+      "name": "Q402 Agent (by Quack AI)",
+      "description": "Gasless stablecoin payment agent on BNB Chain.",
+      "image": "https://q402.quackai.ai/icon.svg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {
+          "q402": "https://q402.quackai.ai/api/relay/info"
+        },
+        "mcp": "https://q402.quackai.ai/api/mcp/info"
+      },
+      "x402": false,
+      "owner": "0x6b0a6C45d6631c45bF6868F65c508cd68f26b7aA",
+      "agentWallet": "0x6b0a6C45d6631c45bF6868F65c508cd68f26b7aA",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://q402.quackai.ai/api/wallet/agentic/agent-metadata/0x999f8a4b247b3d0dff3a181b722eca8ca8d1c392f28bbbe15292a90cfe79"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://q402.quackai.ai/api/mcp/info",
+          "state": "gated",
+          "checkedAt": "2026-09-04T16:56:14.513Z",
+          "httpStatus": 405,
+          "latencyMs": 447,
+          "evidence": "endpoint exists but rejects both streamable-http initialize and SSE"
+        }
+      ],
+      "liveStatus": "gated",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:15.385Z"
+    },
+    {
+      "key": "56:332952",
+      "chainId": 56,
+      "tokenId": "332952",
+      "name": "Q402 Agent (by Quack AI)",
+      "description": "Gasless stablecoin payment agent on BNB Chain.",
+      "image": "https://q402.quackai.ai/icon.svg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {
+          "q402": "https://q402.quackai.ai/api/relay/info"
+        },
+        "mcp": "https://q402.quackai.ai/api/mcp/info"
+      },
+      "x402": false,
+      "owner": "0x44dd31538b1BC575BB35e144EBd7CD4f82DDA636",
+      "agentWallet": "0x44dd31538b1BC575BB35e144EBd7CD4f82DDA636",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://q402.quackai.ai/api/wallet/agentic/agent-metadata/0x6efeb433e0a55eedcad743e9ebb2b0e60193975c16b2a6065408d3fb23d8"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://q402.quackai.ai/api/mcp/info",
+          "state": "gated",
+          "checkedAt": "2026-09-04T16:56:14.603Z",
+          "httpStatus": 405,
+          "latencyMs": 468,
+          "evidence": "endpoint exists but rejects both streamable-http initialize and SSE"
+        }
+      ],
+      "liveStatus": "gated",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:15.508Z"
+    },
+    {
+      "key": "56:332954",
+      "chainId": 56,
+      "tokenId": "332954",
+      "name": "Q402 Agent (by Quack AI)",
+      "description": "Gasless stablecoin payment agent on BNB Chain.",
+      "image": "https://q402.quackai.ai/icon.svg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {
+          "q402": "https://q402.quackai.ai/api/relay/info"
+        },
+        "mcp": "https://q402.quackai.ai/api/mcp/info"
+      },
+      "x402": false,
+      "owner": "0x3f344accDAD9904688c8618C88558C832FD9032E",
+      "agentWallet": "0x3f344accDAD9904688c8618C88558C832FD9032E",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://q402.quackai.ai/api/wallet/agentic/agent-metadata/0x10cb29a38267b8850d10cdaf05410469b9927b36105204a3197ba21531dc"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://q402.quackai.ai/api/mcp/info",
+          "state": "gated",
+          "checkedAt": "2026-09-04T16:56:14.503Z",
+          "httpStatus": 405,
+          "latencyMs": 438,
+          "evidence": "endpoint exists but rejects both streamable-http initialize and SSE"
+        }
+      ],
+      "liveStatus": "gated",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:15.543Z"
+    },
+    {
+      "key": "56:332948",
+      "chainId": 56,
+      "tokenId": "332948",
+      "name": "Q402 Agent (by Quack AI)",
+      "description": "Gasless stablecoin payment agent on BNB Chain.",
+      "image": "https://q402.quackai.ai/icon.svg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {
+          "q402": "https://q402.quackai.ai/api/relay/info"
+        },
+        "mcp": "https://q402.quackai.ai/api/mcp/info"
+      },
+      "x402": false,
+      "owner": "0x69472Da0E348651b57a9C893545B62B8a2099b12",
+      "agentWallet": "0x69472Da0E348651b57a9C893545B62B8a2099b12",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://q402.quackai.ai/api/wallet/agentic/agent-metadata/0x10c8d551ce23ad89e67c92245621925ffb1970099a1a7448464a561b2f1a"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://q402.quackai.ai/api/mcp/info",
+          "state": "gated",
+          "checkedAt": "2026-09-04T16:56:14.995Z",
+          "httpStatus": 405,
+          "latencyMs": 349,
+          "evidence": "endpoint exists but rejects both streamable-http initialize and SSE"
+        }
+      ],
+      "liveStatus": "gated",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:15.841Z"
+    },
+    {
+      "key": "56:332950",
+      "chainId": 56,
+      "tokenId": "332950",
+      "name": "Q402 Agent (by Quack AI)",
+      "description": "Gasless stablecoin payment agent on BNB Chain.",
+      "image": "https://q402.quackai.ai/icon.svg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {
+          "q402": "https://q402.quackai.ai/api/relay/info"
+        },
+        "mcp": "https://q402.quackai.ai/api/mcp/info"
+      },
+      "x402": false,
+      "owner": "0x52958609306fad35D84B03d06aDe9Ea9E5C8A8F2",
+      "agentWallet": "0x52958609306fad35D84B03d06aDe9Ea9E5C8A8F2",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://q402.quackai.ai/api/wallet/agentic/agent-metadata/0x87f66d54fbd4a3808867dd1e8c9344260c29bb28b6c3f3e811a3e2c0f46a"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://q402.quackai.ai/api/mcp/info",
+          "state": "gated",
+          "checkedAt": "2026-09-04T16:56:15.043Z",
+          "httpStatus": 405,
+          "latencyMs": 328,
+          "evidence": "endpoint exists but rejects both streamable-http initialize and SSE"
+        }
+      ],
+      "liveStatus": "gated",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:15.845Z"
+    },
+    {
+      "key": "56:332947",
+      "chainId": 56,
+      "tokenId": "332947",
+      "name": "Q402 Agent (by Quack AI)",
+      "description": "Gasless stablecoin payment agent on BNB Chain.",
+      "image": "https://q402.quackai.ai/icon.svg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {
+          "q402": "https://q402.quackai.ai/api/relay/info"
+        },
+        "mcp": "https://q402.quackai.ai/api/mcp/info"
+      },
+      "x402": false,
+      "owner": "0xeb153b982a4aCf11C4C356D47497F2Ec4ABc0c03",
+      "agentWallet": "0xeb153b982a4aCf11C4C356D47497F2Ec4ABc0c03",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://q402.quackai.ai/api/wallet/agentic/agent-metadata/0x4b710e57cf22a494449881463b44723b2e3f6afb5aef694fb234ae684ff7"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://q402.quackai.ai/api/mcp/info",
+          "state": "gated",
+          "checkedAt": "2026-09-04T16:56:15.511Z",
+          "httpStatus": 405,
+          "latencyMs": 350,
+          "evidence": "endpoint exists but rejects both streamable-http initialize and SSE"
+        }
+      ],
+      "liveStatus": "gated",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:16.293Z"
+    },
+    {
+      "key": "56:332945",
+      "chainId": 56,
+      "tokenId": "332945",
+      "name": "Q402 Agent (by Quack AI)",
+      "description": "Gasless stablecoin payment agent on BNB Chain.",
+      "image": "https://q402.quackai.ai/icon.svg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {
+          "q402": "https://q402.quackai.ai/api/relay/info"
+        },
+        "mcp": "https://q402.quackai.ai/api/mcp/info"
+      },
+      "x402": false,
+      "owner": "0xa8a3E24547045115efbA55d63D45A6AC45576553",
+      "agentWallet": "0xa8a3E24547045115efbA55d63D45A6AC45576553",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://q402.quackai.ai/api/wallet/agentic/agent-metadata/0xc4c5fd689091318c2b8419b75f9cfd5547b380885d7ced83daf06e0c1c56"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://q402.quackai.ai/api/mcp/info",
+          "state": "gated",
+          "checkedAt": "2026-09-04T16:56:15.634Z",
+          "httpStatus": 405,
+          "latencyMs": 338,
+          "evidence": "endpoint exists but rejects both streamable-http initialize and SSE"
+        }
+      ],
+      "liveStatus": "gated",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:16.395Z"
+    },
+    {
+      "key": "56:332943",
+      "chainId": 56,
+      "tokenId": "332943",
+      "name": "Q402 Agent (by Quack AI)",
+      "description": "Gasless stablecoin payment agent on BNB Chain.",
+      "image": "https://q402.quackai.ai/icon.svg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {
+          "q402": "https://q402.quackai.ai/api/relay/info"
+        },
+        "mcp": "https://q402.quackai.ai/api/mcp/info"
+      },
+      "x402": false,
+      "owner": "0x3DF1AbDee9eCC8d36317B65f904b7496E3ea04af",
+      "agentWallet": "0x3DF1AbDee9eCC8d36317B65f904b7496E3ea04af",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://q402.quackai.ai/api/wallet/agentic/agent-metadata/0x3eeedb35bcd56ac4d340387b60d125e969117c4ae56e132d236246310755"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://q402.quackai.ai/api/mcp/info",
+          "state": "gated",
+          "checkedAt": "2026-09-04T16:56:15.804Z",
+          "httpStatus": 405,
+          "latencyMs": 337,
+          "evidence": "endpoint exists but rejects both streamable-http initialize and SSE"
+        }
+      ],
+      "liveStatus": "gated",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:16.565Z"
+    },
+    {
+      "key": "56:332942",
+      "chainId": 56,
+      "tokenId": "332942",
+      "name": "Q402 Agent (by Quack AI)",
+      "description": "Gasless stablecoin payment agent on BNB Chain.",
+      "image": "https://q402.quackai.ai/icon.svg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {
+          "q402": "https://q402.quackai.ai/api/relay/info"
+        },
+        "mcp": "https://q402.quackai.ai/api/mcp/info"
+      },
+      "x402": false,
+      "owner": "0x836D696787680ADAF21619C593E43282C9c11A2B",
+      "agentWallet": "0x836D696787680ADAF21619C593E43282C9c11A2B",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://q402.quackai.ai/api/wallet/agentic/agent-metadata/0x156933a4ae479cb3661e49eb7ffa12cd92b3769ab83a5de69c5eae560148"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://q402.quackai.ai/api/mcp/info",
+          "state": "gated",
+          "checkedAt": "2026-09-04T16:56:15.811Z",
+          "httpStatus": 405,
+          "latencyMs": 370,
+          "evidence": "endpoint exists but rejects both streamable-http initialize and SSE"
+        }
+      ],
+      "liveStatus": "gated",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:16.574Z"
+    },
+    {
+      "key": "56:332940",
+      "chainId": 56,
+      "tokenId": "332940",
+      "name": "Q402 Agent (by Quack AI)",
+      "description": "Gasless stablecoin payment agent on BNB Chain.",
+      "image": "https://q402.quackai.ai/icon.svg",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {
+          "q402": "https://q402.quackai.ai/api/relay/info"
+        },
+        "mcp": "https://q402.quackai.ai/api/mcp/info"
+      },
+      "x402": false,
+      "owner": "0xcDa22f323395e9e4a20d1371DDFf1e517E4e2461",
+      "agentWallet": "0xcDa22f323395e9e4a20d1371DDFf1e517E4e2461",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [],
+        "onchainUri": "https://q402.quackai.ai/api/wallet/agentic/agent-metadata/0x4b9b259ce5c35a5823b0713c5219b7b63b27db2e41a5256826955242aeea"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://q402.quackai.ai/api/mcp/info",
+          "state": "gated",
+          "checkedAt": "2026-09-04T16:56:16.091Z",
+          "httpStatus": 405,
+          "latencyMs": 453,
+          "evidence": "endpoint exists but rejects both streamable-http initialize and SSE"
+        }
+      ],
+      "liveStatus": "gated",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:16.967Z"
+    },
+    {
+      "key": "56:334675",
+      "chainId": 56,
+      "tokenId": "334675",
+      "name": "SHIREEN65532591.agent",
+      "description": "SHIREEN65532591.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/080348b6-0b0b-47dd-8f4d-8bfd614147b8-29.png",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {
+          "Termix Platform": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services"
+        },
+        "a2a": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card"
+      },
+      "x402": false,
+      "owner": "0xf66C3DCC05c720a9082541e6b20eE534C37c07e6",
+      "agentWallet": "0xf66C3DCC05c720a9082541e6b20eE534C37c07e6",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [
+          "A2A endpoint has unresolved template {agentId}",
+          "Termix Platform endpoint has unresolved template {agentId}"
+        ],
+        "onchainUri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/fef59a655146f2422dcf49d6c1715ea5eb3a7c35399"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "state": "unresolved",
+          "checkedAt": "2026-09-04T16:56:18.303Z",
+          "error": "endpoint contains an unresolved template placeholder"
+        }
+      ],
+      "liveStatus": "unresolved",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:18.694Z"
+    },
+    {
+      "key": "56:334673",
+      "chainId": 56,
+      "tokenId": "334673",
+      "name": "Mostafa19381795.agent",
+      "description": "Mostafa19381795.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/8f830d8f-acfd-4f82-87ae-d01ea62f2bc4-18.png",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {
+          "Termix Platform": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services"
+        },
+        "a2a": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card"
+      },
+      "x402": false,
+      "owner": "0x6F1F320e0889Bf6956844b4f25B0b016e7CAAf18",
+      "agentWallet": "0x6F1F320e0889Bf6956844b4f25B0b016e7CAAf18",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [
+          "A2A endpoint has unresolved template {agentId}",
+          "Termix Platform endpoint has unresolved template {agentId}"
+        ],
+        "onchainUri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/4159dcb4b06d0cf9d3a8ee5c4e8752d1f61254a348f"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "state": "unresolved",
+          "checkedAt": "2026-09-04T16:56:18.511Z",
+          "error": "endpoint contains an unresolved template placeholder"
+        }
+      ],
+      "liveStatus": "unresolved",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:19.462Z"
+    },
+    {
+      "key": "97:2101",
+      "chainId": 97,
+      "tokenId": "2101",
+      "name": "123456.agent",
+      "description": "123123123",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/c538790a-2986-423f-8422-9a91ec4287e5-2.png",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {
+          "Termix Platform": "https://platform-backend.dev.termix.live/api/v1/agents/{agentId}/services"
+        },
+        "a2a": "https://platform-backend.dev.termix.live/api/v1/a2a/agents/{agentId}/card"
+      },
+      "x402": false,
+      "owner": "0xB7F34D95E0d0f504e95e22c8cdf1A490c3A5156c",
+      "agentWallet": "0xB7F34D95E0d0f504e95e22c8cdf1A490c3A5156c",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [
+          "A2A endpoint has unresolved template {agentId}",
+          "Termix Platform endpoint has unresolved template {agentId}"
+        ],
+        "onchainUri": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/agents/5b1f013f474f8d82cbe687b79ff2f52e3eebddda8c18a"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://platform-backend.dev.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "state": "unresolved",
+          "checkedAt": "2026-09-04T16:56:27.091Z",
+          "error": "endpoint contains an unresolved template placeholder"
+        }
+      ],
+      "liveStatus": "unresolved",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:27.652Z"
+    },
+    {
+      "key": "97:2100",
+      "chainId": 97,
+      "tokenId": "2100",
+      "name": "123.agent",
+      "description": "123",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/dc981d3d-eb97-4e41-9809-d386b02ff094-1.png",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {
+          "Termix Platform": "https://platform-backend.dev.termix.live/api/v1/agents/{agentId}/services"
+        },
+        "a2a": "https://platform-backend.dev.termix.live/api/v1/a2a/agents/{agentId}/card"
+      },
+      "x402": false,
+      "owner": "0xB7F34D95E0d0f504e95e22c8cdf1A490c3A5156c",
+      "agentWallet": "0xB7F34D95E0d0f504e95e22c8cdf1A490c3A5156c",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [
+          "A2A endpoint has unresolved template {agentId}",
+          "Termix Platform endpoint has unresolved template {agentId}"
+        ],
+        "onchainUri": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/agents/c8c9fd7570d2c9940f31ed7de4db5494924e844cd9dfd"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://platform-backend.dev.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "state": "unresolved",
+          "checkedAt": "2026-09-04T16:56:27.254Z",
+          "error": "endpoint contains an unresolved template placeholder"
+        }
+      ],
+      "liveStatus": "unresolved",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:27.842Z"
+    },
+    {
+      "key": "56:7612",
+      "chainId": 56,
+      "tokenId": "7612",
+      "name": "8k4 Protocol Trust Oracle",
+      "description": "On-chain trust scoring and identity infrastructure for ERC-8004 agents. Indexes 54,000+ agents across Ethereum, Base, and BSC. Provides IGGY-Score reputation signals (0-100), verified metadata hosting, and cross-chain agent lookup. Pay-per-query via x402 (USDC on Base), no signup required. Free tier available for score lookups.",
+      "image": "https://api.8004scan.io/api/v1/media/agents/56/7612/image",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "Web",
+        "Email"
+      ],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0xb273616670037C0870E9835B3FFBE68f58de68B0",
+      "agentWallet": "0xb273616670037C0870E9835B3FFBE68f58de68B0",
+      "registration": {
+        "ok": false,
+        "source": "http",
+        "warnings": [],
+        "error": "HTTP 410",
+        "onchainUri": "https://api.8k4protocol.com/metadata/bsc/7612.json"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 12.05,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:14.174Z"
+    },
+    {
+      "key": "97:2112",
+      "chainId": 97,
+      "tokenId": "2112",
+      "name": "AgentMarket Rebalancing Agent",
+      "description": "AgentMarket first-party Rebalancing strategy agent for controlled BSC Testnet execution through ERC-8183 and scoped execution.",
+      "image": "",
+      "category": "rebalancing",
+      "classification": {
+        "category": "rebalancing",
+        "confidence": 1,
+        "scores": {
+          "rebalancing": 3
+        },
+        "matched": [
+          "rebalancing:rebalancing"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {
+          "ERC-8183": "https://rebalancing-agent-production.up.railway.app/erc8183/status"
+        }
+      },
+      "x402": true,
+      "owner": "0xe63a2dbe24Dd1077E01f78bf76aCF29F6788638b",
+      "agentWallet": "0xe63a2dbe24Dd1077E01f78bf76aCF29F6788638b",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6IkFnZW50TWFya2V0IGZpcnN0LXBhcnR5IFJlYmFsYW5jaW5nIHN0cmF0ZWd5IGFnZW50IGZ"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 12.01,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:29.973Z"
+    },
+    {
+      "key": "97:2111",
+      "chainId": 97,
+      "tokenId": "2111",
+      "name": "AgentMarket Grid Agent",
+      "description": "AgentMarket first-party Grid strategy agent for controlled BSC Testnet execution through ERC-8183 and scoped execution.",
+      "image": "",
+      "category": "grid",
+      "classification": {
+        "category": "grid",
+        "confidence": 1,
+        "scores": {
+          "grid": 4
+        },
+        "matched": [
+          "grid:grid "
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {
+          "ERC-8183": "https://grid-agent-testnet-v4-production.up.railway.app/erc8183/status"
+        }
+      },
+      "x402": true,
+      "owner": "0xD92f9F7b9EEffF37ABB297241f387aa9adBdaA2A",
+      "agentWallet": "0xD92f9F7b9EEffF37ABB297241f387aa9adBdaA2A",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6IkFnZW50TWFya2V0IGZpcnN0LXBhcnR5IEdyaWQgc3RyYXRlZ3kgYWdlbnQgZm9yIGNvbnR"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 12.01,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:30.043Z"
+    },
+    {
+      "key": "97:2110",
+      "chainId": 97,
+      "tokenId": "2110",
+      "name": "AgentMarket Rebalancing Agent",
+      "description": "AgentMarket first-party Rebalancing strategy agent for controlled BSC Testnet execution through ERC-8183 and scoped execution.",
+      "image": "",
+      "category": "rebalancing",
+      "classification": {
+        "category": "rebalancing",
+        "confidence": 1,
+        "scores": {
+          "rebalancing": 3
+        },
+        "matched": [
+          "rebalancing:rebalancing"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {
+          "ERC-8183": "https://rebalancing-agent-production.up.railway.app/erc8183/status"
+        }
+      },
+      "x402": true,
+      "owner": "0xe63a2dbe24Dd1077E01f78bf76aCF29F6788638b",
+      "agentWallet": "0xe63a2dbe24Dd1077E01f78bf76aCF29F6788638b",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6IkFnZW50TWFya2V0IGZpcnN0LXBhcnR5IFJlYmFsYW5jaW5nIHN0cmF0ZWd5IGFnZW50IGZ"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 12.01,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:30.693Z"
+    },
+    {
+      "key": "56:334686",
+      "chainId": 56,
+      "tokenId": "334686",
+      "name": "0911Ritsu.agent",
+      "description": "0911Ritsu.agent on Termix Platform",
+      "image": null,
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": false,
+      "owner": "0xbb3fe6b3fE1e6Af088b19775eF81643D068e85D5",
+      "agentWallet": "0xbb3fe6b3fE1e6Af088b19775eF81643D068e85D5",
+      "registration": {
+        "ok": false,
+        "source": "http",
+        "warnings": [],
+        "error": "schema: Expected string, received null",
+        "onchainUri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/71ad3ca3ac166e1a23250a9a0793a7e66da1aacce0c"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:17.414Z"
+    },
+    {
+      "key": "56:334685",
+      "chainId": 56,
+      "tokenId": "334685",
+      "name": "dishy_l.agent",
+      "description": "dishy_l.agent on Termix Platform",
+      "image": null,
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": false,
+      "owner": "0x647CbECD4703b50B93e3cFca940a2f0C28207474",
+      "agentWallet": "0x647CbECD4703b50B93e3cFca940a2f0C28207474",
+      "registration": {
+        "ok": false,
+        "source": "http",
+        "warnings": [],
+        "error": "schema: Expected string, received null",
+        "onchainUri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/77f09891dc2255f24d10d3b8cd1dabaaac6ca0bbd1a"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:17.739Z"
+    },
+    {
+      "key": "56:334684",
+      "chainId": 56,
+      "tokenId": "334684",
+      "name": "EarlyJudit59178.agent",
+      "description": "EarlyJudit59178.agent on Termix Platform",
+      "image": null,
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": false,
+      "owner": "0x682379C6b8a3ba1481Cc6D372aF6DA6377C7B1b7",
+      "agentWallet": "0x682379C6b8a3ba1481Cc6D372aF6DA6377C7B1b7",
+      "registration": {
+        "ok": false,
+        "source": "http",
+        "warnings": [],
+        "error": "schema: Expected string, received null",
+        "onchainUri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/bf4174ce0f8b558af7471d7df92421dc809a0f24a61"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:17.806Z"
+    },
+    {
+      "key": "56:334679",
+      "chainId": 56,
+      "tokenId": "334679",
+      "name": "StayStrongEn.agent",
+      "description": "StayStrongEn.agent on Termix Platform",
+      "image": null,
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": false,
+      "owner": "0x8c4954f82eF49fC4aEa38bbDc74E6c33BBE81477",
+      "agentWallet": "0x8c4954f82eF49fC4aEa38bbDc74E6c33BBE81477",
+      "registration": {
+        "ok": false,
+        "source": "http",
+        "warnings": [],
+        "error": "schema: Expected string, received null",
+        "onchainUri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/7753c1720170a306d4c98c8b0dbacee0f657347fbd5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:17.812Z"
+    },
+    {
+      "key": "56:334683",
+      "chainId": 56,
+      "tokenId": "334683",
+      "name": "hersingnak8.agent",
+      "description": "hersingnak8.agent on Termix Platform",
+      "image": null,
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": false,
+      "owner": "0x22831F0a78C5161c1530193Eb3eD4aEb8831782C",
+      "agentWallet": "0x22831F0a78C5161c1530193Eb3eD4aEb8831782C",
+      "registration": {
+        "ok": false,
+        "source": "http",
+        "warnings": [],
+        "error": "schema: Expected string, received null",
+        "onchainUri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/5da97238c4cf39f058f4e41b96ffb4c7fc7071afdbf"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:18.024Z"
+    },
+    {
+      "key": "56:334681",
+      "chainId": 56,
+      "tokenId": "334681",
+      "name": "anhhoang.agent",
+      "description": "I provide smart contract security reviews, vulnerability analysis, and gas optimization for DeFi protocols.",
+      "image": null,
+      "category": "research",
+      "classification": {
+        "category": "research",
+        "confidence": 1,
+        "scores": {
+          "research": 3
+        },
+        "matched": [
+          "research:analysis"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": false,
+      "owner": "0x7c597703819eAB3acF1001c9D2558c5172BbBD1e",
+      "agentWallet": "0x7c597703819eAB3acF1001c9D2558c5172BbBD1e",
+      "registration": {
+        "ok": false,
+        "source": "http",
+        "warnings": [],
+        "error": "schema: Expected string, received null",
+        "onchainUri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/4ba06334057418d39af4e641d8b91d579eb0320ef52"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:18.032Z"
+    },
+    {
+      "key": "56:334678",
+      "chainId": 56,
+      "tokenId": "334678",
+      "name": "MohamedFathyIb6.agent",
+      "description": "MohamedFathyIb6.agent on Termix Platform",
+      "image": null,
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": false,
+      "owner": "0xFf1b6C5084F0eda90267a7E08313594585e79010",
+      "agentWallet": "0xFf1b6C5084F0eda90267a7E08313594585e79010",
+      "registration": {
+        "ok": false,
+        "source": "http",
+        "warnings": [],
+        "error": "schema: Expected string, received null",
+        "onchainUri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/25f8fcd6f54b8d1b437b0910aa693050798b13e5af5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:18.222Z"
+    },
+    {
+      "key": "56:334677",
+      "chainId": 56,
+      "tokenId": "334677",
+      "name": "LeeShay28730.agent",
+      "description": "LeeShay28730.agent on Termix Platform",
+      "image": null,
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": false,
+      "owner": "0x501c6762FFd53129a9ea3ee5cB042f0B5E37ac52",
+      "agentWallet": "0x501c6762FFd53129a9ea3ee5cB042f0B5E37ac52",
+      "registration": {
+        "ok": false,
+        "source": "http",
+        "warnings": [],
+        "error": "schema: Expected string, received null",
+        "onchainUri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/e05226b3bffa80823f7938d121d1674e60abd9337f2"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:18.523Z"
+    },
+    {
+      "key": "56:334676",
+      "chainId": 56,
+      "tokenId": "334676",
+      "name": "hoanganh.agent",
+      "description": "I provide smart contract security reviews, vulnerability analysis, and gas optimization for DeFi protocols.",
+      "image": null,
+      "category": "research",
+      "classification": {
+        "category": "research",
+        "confidence": 1,
+        "scores": {
+          "research": 3
+        },
+        "matched": [
+          "research:analysis"
+        ]
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": false,
+      "owner": "0x7c597703819eAB3acF1001c9D2558c5172BbBD1e",
+      "agentWallet": "0x7c597703819eAB3acF1001c9D2558c5172BbBD1e",
+      "registration": {
+        "ok": false,
+        "source": "http",
+        "warnings": [],
+        "error": "schema: Expected string, received null",
+        "onchainUri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/3d6f98ae2ff8e221233895fad8a7f696a1a85a213bd"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:18.613Z"
+    },
+    {
+      "key": "56:334700",
+      "chainId": 56,
+      "tokenId": "334700",
+      "name": "Ave.ai Trading Agent",
+      "description": "AI-driven multi-chain trading agent with on-chain reputation.",
+      "image": "https://www.iconaves.com/logo/pro.ave.ai.png",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0x8544eF1Cd30B924Ae5d85A06d88bc51D0D43591E",
+      "agentWallet": "0x8544eF1Cd30B924Ae5d85A06d88bc51D0D43591E",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [
+          "no services advertised"
+        ],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:18.696Z"
+    },
+    {
+      "key": "56:334670",
+      "chainId": 56,
+      "tokenId": "334670",
+      "name": "vector-rif08.agent",
+      "description": "Autonomous code & smart contracts agent registered through TermiX.",
+      "image": null,
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": false,
+      "owner": "0x7af9D740F28E7AdEEd2c08d6Db54ad5a7E130856",
+      "agentWallet": "0x7af9D740F28E7AdEEd2c08d6Db54ad5a7E130856",
+      "registration": {
+        "ok": false,
+        "source": "http",
+        "warnings": [],
+        "error": "schema: Expected string, received null",
+        "onchainUri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/8323647114cb8d0f0ab84bb3f15d42402c903614a2d"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:18.904Z"
+    },
+    {
+      "key": "56:334688",
+      "chainId": 56,
+      "tokenId": "334688",
+      "name": "Ave.ai Trading Agent",
+      "description": "AI-driven multi-chain trading agent with on-chain reputation.",
+      "image": "https://www.iconaves.com/logo/pro.ave.ai.png",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0x0E4D8fcBA15caa0Fd50B2aDffd468398E505e0B1",
+      "agentWallet": "0x0E4D8fcBA15caa0Fd50B2aDffd468398E505e0B1",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [
+          "no services advertised"
+        ],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:19.232Z"
+    },
+    {
+      "key": "56:334682",
+      "chainId": 56,
+      "tokenId": "334682",
+      "name": "Ave.ai Trading Agent",
+      "description": "AI-driven multi-chain trading agent with on-chain reputation.",
+      "image": "https://www.iconaves.com/logo/pro.ave.ai.png",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0x0D4D9e63DC2CAFAe7cA3C4eF3126E51C75b9B464",
+      "agentWallet": "0x0D4D9e63DC2CAFAe7cA3C4eF3126E51C75b9B464",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [
+          "no services advertised"
+        ],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:19.433Z"
+    },
+    {
+      "key": "56:334579",
+      "chainId": 56,
+      "tokenId": "334579",
+      "name": "Ave.ai Trading Agent",
+      "description": "AI-driven multi-chain trading agent with on-chain reputation.",
+      "image": "https://www.iconaves.com/logo/pro.ave.ai.png",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0xf06A40F184D08754Ca3b0BCCaf5d5626C1880711",
+      "agentWallet": "0xf06A40F184D08754Ca3b0BCCaf5d5626C1880711",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [
+          "no services advertised"
+        ],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:19.453Z"
+    },
+    {
+      "key": "56:334566",
+      "chainId": 56,
+      "tokenId": "334566",
+      "name": "Ave.ai Trading Agent",
+      "description": "AI-driven multi-chain trading agent with on-chain reputation.",
+      "image": "https://www.iconaves.com/logo/pro.ave.ai.png",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0x57D8c13cf8bCeC54fCf4682eD921ecaA7e4297Ac",
+      "agentWallet": "0x57D8c13cf8bCeC54fCf4682eD921ecaA7e4297Ac",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [
+          "no services advertised"
+        ],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:19.605Z"
+    },
+    {
+      "key": "56:334689",
+      "chainId": 56,
+      "tokenId": "334689",
+      "name": "Ave.ai Trading Agent",
+      "description": "AI-driven multi-chain trading agent with on-chain reputation.",
+      "image": "https://www.iconaves.com/logo/pro.ave.ai.png",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0x2e40A079D288F593023eEa3Fdb708843c0E107f0",
+      "agentWallet": "0x2e40A079D288F593023eEa3Fdb708843c0E107f0",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [
+          "no services advertised"
+        ],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:19.657Z"
+    },
+    {
+      "key": "56:334531",
+      "chainId": 56,
+      "tokenId": "334531",
+      "name": "Ave.ai Trading Agent",
+      "description": "AI-driven multi-chain trading agent with on-chain reputation.",
+      "image": "https://www.iconaves.com/logo/pro.ave.ai.png",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0x956Bc857cf8DF4de8a8C51502d97e64C129CC5F5",
+      "agentWallet": "0x956Bc857cf8DF4de8a8C51502d97e64C129CC5F5",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [
+          "no services advertised"
+        ],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:19.814Z"
+    },
+    {
+      "key": "56:334507",
+      "chainId": 56,
+      "tokenId": "334507",
+      "name": "Ave.ai Trading Agent",
+      "description": "AI-driven multi-chain trading agent with on-chain reputation.",
+      "image": "https://www.iconaves.com/logo/pro.ave.ai.png",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0xC92b005Bd2Eee947c3B8ad5b696d01398c1F6Ba2",
+      "agentWallet": "0xC92b005Bd2Eee947c3B8ad5b696d01398c1F6Ba2",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [
+          "no services advertised"
+        ],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:19.918Z"
+    },
+    {
+      "key": "56:334492",
+      "chainId": 56,
+      "tokenId": "334492",
+      "name": "Ave.ai Trading Agent",
+      "description": "AI-driven multi-chain trading agent with on-chain reputation.",
+      "image": "https://www.iconaves.com/logo/pro.ave.ai.png",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0x7699303Ff0242150b5F2d3B6D31A7d16aa94BBFD",
+      "agentWallet": "0x7699303Ff0242150b5F2d3B6D31A7d16aa94BBFD",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [
+          "no services advertised"
+        ],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:19.921Z"
+    },
+    {
+      "key": "56:334397",
+      "chainId": 56,
+      "tokenId": "334397",
+      "name": "Ave.ai Trading Agent",
+      "description": "AI-driven multi-chain trading agent with on-chain reputation.",
+      "image": "https://www.iconaves.com/logo/pro.ave.ai.png",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0x9bA0eff81904B464aC32492c822A44255414A7AC",
+      "agentWallet": "0x9bA0eff81904B464aC32492c822A44255414A7AC",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [
+          "no services advertised"
+        ],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:20.125Z"
+    },
+    {
+      "key": "56:334354",
+      "chainId": 56,
+      "tokenId": "334354",
+      "name": "Ave.ai Trading Agent",
+      "description": "AI-driven multi-chain trading agent with on-chain reputation.",
+      "image": "https://www.iconaves.com/logo/pro.ave.ai.png",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0x784eb3Bba1c22D4b11134D482263EAa7F0125616",
+      "agentWallet": "0x784eb3Bba1c22D4b11134D482263EAa7F0125616",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [
+          "no services advertised"
+        ],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:20.193Z"
+    },
+    {
+      "key": "56:334419",
+      "chainId": 56,
+      "tokenId": "334419",
+      "name": "Ave.ai Trading Agent",
+      "description": "AI-driven multi-chain trading agent with on-chain reputation.",
+      "image": "https://www.iconaves.com/logo/pro.ave.ai.png",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0x24f7e4BEfD2557b898A0CF0F9ceB3800EB5D5121",
+      "agentWallet": "0x24f7e4BEfD2557b898A0CF0F9ceB3800EB5D5121",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [
+          "no services advertised"
+        ],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:20.372Z"
+    },
+    {
+      "key": "97:2114",
+      "chainId": 97,
+      "tokenId": "2114",
+      "name": "AgentMarket Health Guardian Agent",
+      "description": "AgentMarket first-party Health Guardian strategy agent for controlled BSC Testnet risk protection through ERC-8183 and scoped execution.",
+      "image": "",
+      "category": "other",
+      "classification": {
+        "category": "other",
+        "confidence": 0,
+        "scores": {},
+        "matched": []
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {
+          "ERC-8183": "https://health-agent-production-4668.up.railway.app/erc8183/status"
+        }
+      },
+      "x402": true,
+      "owner": "0x3C2D2248d065F80463d5C1453b659B7C18Ac9F73",
+      "agentWallet": "0x3C2D2248d065F80463d5C1453b659B7C18Ac9F73",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6IkFnZW50TWFya2V0IGZpcnN0LXBhcnR5IEhlYWx0aCBHdWFyZGlhbiBzdHJhdGVneSBhZ2V"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:29.846Z"
+    },
+    {
+      "key": "97:2113",
+      "chainId": 97,
+      "tokenId": "2113",
+      "name": "AgentMarket Yield Optimisation Agent",
+      "description": "AgentMarket first-party Yield Optimisation strategy agent for controlled BSC Testnet execution through ERC-8183 and scoped execution.",
+      "image": "",
+      "category": "yield",
+      "classification": {
+        "category": "yield",
+        "confidence": 1,
+        "scores": {
+          "yield": 3
+        },
+        "matched": [
+          "yield:yield"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {
+          "ERC-8183": "https://yield-agent-production.up.railway.app/erc8183/status"
+        }
+      },
+      "x402": true,
+      "owner": "0x14BdB2eD94E7020A940C43bBeED01a48Ec903A93",
+      "agentWallet": "0x14BdB2eD94E7020A940C43bBeED01a48Ec903A93",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6IkFnZW50TWFya2V0IGZpcnN0LXBhcnR5IFlpZWxkIE9wdGltaXNhdGlvbiBzdHJhdGVneSB"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:29.992Z"
+    },
+    {
+      "key": "97:2109",
+      "chainId": 97,
+      "tokenId": "2109",
+      "name": "Diversified Optimizer",
+      "description": "Moves idle stablecoin into Venus Core-pool markets under a 60% per-market ceiling, accepting a lower headline rate rather than concentrating the whole position in one market. Acts through vToken.mint(uint256), which takes an amount and no recipient. Reference agent built from the BNB Agent Studio scaffold and self-hosted by the MANDATE team.",
+      "image": null,
+      "category": "health-factor",
+      "classification": {
+        "category": "health-factor",
+        "confidence": 1,
+        "scores": {
+          "health-factor": 2
+        },
+        "matched": [
+          "health-factor:venus"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0xdc5071910E6Ca6855d45f96BA28eE0a2E5629299",
+      "agentWallet": "0xdc5071910E6Ca6855d45f96BA28eE0a2E5629299",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [
+          "missing type",
+          "no services advertised"
+        ],
+        "onchainUri": "https://mandate-agents.timjosh507.workers.dev/yield-b.json"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:31.231Z"
+    },
+    {
+      "key": "97:2108",
+      "chainId": 97,
+      "tokenId": "2108",
+      "name": "Cost-Aware Optimizer",
+      "description": "Moves idle stablecoin into the Venus Core-pool market paying the best rate, and only when that rate clears the cost of moving it. Concentrates without limit: where the best net rate is, the capital goes. Acts through vToken.mint(uint256), which takes an amount and no recipient. Reference agent built from the BNB Agent Studio scaffold and self-hosted by the MANDATE team.",
+      "image": null,
+      "category": "health-factor",
+      "classification": {
+        "category": "health-factor",
+        "confidence": 1,
+        "scores": {
+          "health-factor": 2
+        },
+        "matched": [
+          "health-factor:venus"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0xdc5071910E6Ca6855d45f96BA28eE0a2E5629299",
+      "agentWallet": "0xdc5071910E6Ca6855d45f96BA28eE0a2E5629299",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [
+          "missing type",
+          "no services advertised"
+        ],
+        "onchainUri": "https://mandate-agents.timjosh507.workers.dev/yield-a.json"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:31.323Z"
+    },
+    {
+      "key": "97:2106",
+      "chainId": 97,
+      "tokenId": "2106",
+      "name": "Narrow Band Allocator",
+      "description": "Holds an equal-weight allocation across the Venus Core-pool stablecoin markets and corrects it as soon as a market falls 100 bps of the portfolio behind its target. Tops up the under-weight side through vToken.mint(uint256), which takes an amount and no recipient; it never withdraws, because redeemUnderlying(uint256) can push a borrowing account's health factor below one and needs a guard this authority does not carry. Reference agent built from the BNB Agent Studio scaffold and self-hosted by the MANDATE team.",
+      "image": null,
+      "category": "health-factor",
+      "classification": {
+        "category": "health-factor",
+        "confidence": 1,
+        "scores": {
+          "health-factor": 7
+        },
+        "matched": [
+          "health-factor:health factor",
+          "health-factor:venus"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0xdc5071910E6Ca6855d45f96BA28eE0a2E5629299",
+      "agentWallet": "0xdc5071910E6Ca6855d45f96BA28eE0a2E5629299",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [
+          "missing type",
+          "no services advertised"
+        ],
+        "onchainUri": "https://mandate-agents.timjosh507.workers.dev/rebalancing-a.json"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:31.352Z"
+    },
+    {
+      "key": "97:2107",
+      "chainId": 97,
+      "tokenId": "2107",
+      "name": "Wide Band Allocator",
+      "description": "Holds an equal-weight allocation across the Venus Core-pool stablecoin markets and lets it wander 600 bps of the portfolio before correcting, trading a portfolio that sits further from its weights for far fewer transactions. Tops up the under-weight side through vToken.mint(uint256), which takes an amount and no recipient; it never withdraws, because redeemUnderlying(uint256) can push a borrowing account's health factor below one and needs a guard this authority does not carry. Reference agent built from the BNB Agent Studio scaffold and self-hosted by the MANDATE team.",
+      "image": null,
+      "category": "health-factor",
+      "classification": {
+        "category": "health-factor",
+        "confidence": 0.7,
+        "scores": {
+          "health-factor": 7,
+          "trading": 3
+        },
+        "matched": [
+          "health-factor:health factor",
+          "health-factor:venus",
+          "trading:trading"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0xdc5071910E6Ca6855d45f96BA28eE0a2E5629299",
+      "agentWallet": "0xdc5071910E6Ca6855d45f96BA28eE0a2E5629299",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [
+          "missing type",
+          "no services advertised"
+        ],
+        "onchainUri": "https://mandate-agents.timjosh507.workers.dev/rebalancing-b.json"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:31.362Z"
+    },
+    {
+      "key": "97:2105",
+      "chainId": 97,
+      "tokenId": "2105",
+      "name": "Efficient Guardian",
+      "description": "Defends a Venus Core-pool borrow position on BNB Smart Chain, running closer to the liquidation line than the Conservative Guardian. Intervenes when the liquidation-threshold-weighted health factor falls below 1.15 and proposes a repayBorrow(uint256) that restores it to 1.20, leaving more of the position borrowed at the cost of a thinner buffer. Reference agent built from the BNB Agent Studio scaffold and self-hosted by the MANDATE team.",
+      "image": null,
+      "category": "health-factor",
+      "classification": {
+        "category": "health-factor",
+        "confidence": 1,
+        "scores": {
+          "health-factor": 11
+        },
+        "matched": [
+          "health-factor:health factor",
+          "health-factor:liquidation",
+          "health-factor:venus"
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0xdc5071910E6Ca6855d45f96BA28eE0a2E5629299",
+      "agentWallet": "0xdc5071910E6Ca6855d45f96BA28eE0a2E5629299",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [
+          "missing type",
+          "no services advertised"
+        ],
+        "onchainUri": "https://mandate-agents.timjosh507.workers.dev/health-factor-b.json"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:31.493Z"
+    },
+    {
+      "key": "97:2104",
+      "chainId": 97,
+      "tokenId": "2104",
+      "name": "Wide Grid",
+      "description": "Runs a 100 bps grid ladder four rungs deep on a Curve-style stableswap pool, ignoring the small dislocations its sibling trades and holding a much smaller inventory swing. Acts through exchange(int128,int128,uint256,uint256), which takes two coin indices, an amount and a minimum output, and no recipient. Reference agent built from the BNB Agent Studio scaffold and self-hosted by the MANDATE team.",
+      "image": null,
+      "category": "grid",
+      "classification": {
+        "category": "grid",
+        "confidence": 1,
+        "scores": {
+          "grid": 4
+        },
+        "matched": [
+          "grid:grid \n "
+        ]
+      },
+      "protocols": [],
+      "endpoints": {
+        "other": {}
+      },
+      "x402": true,
+      "owner": "0xdc5071910E6Ca6855d45f96BA28eE0a2E5629299",
+      "agentWallet": "0xdc5071910E6Ca6855d45f96BA28eE0a2E5629299",
+      "registration": {
+        "ok": true,
+        "source": "http",
+        "warnings": [
+          "missing type",
+          "no services advertised"
+        ],
+        "onchainUri": "https://mandate-agents.timjosh507.workers.dev/grid-b.json"
+      },
+      "probes": [],
+      "liveStatus": "skipped",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:31.762Z"
+    },
+    {
+      "key": "97:1776",
+      "chainId": 97,
+      "tokenId": "1776",
+      "name": "monitor-agent",
+      "description": "MonitorAgent vigia mercados, carteiras e posições na BNB Smart Chain. Detecta movimentos relevantes, alerta sobre riscos e fornece dashboards de acompanhamento em tempo real para traders e gestores de carteira.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=256&q=80",
+      "category": "monitoring",
+      "classification": {
+        "category": "monitoring",
+        "confidence": 1,
+        "scores": {
+          "monitoring": 3
+        },
+        "matched": [
+          "monitoring:monitor"
+        ]
+      },
+      "protocols": [
+        "MCP",
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://monitor-agent-demo.vercel.app/",
+        "mcp": "https://monitor-agent-demo.vercel.app/mcp"
+      },
+      "x402": true,
+      "owner": "0x3C0051722f04CD25563C250a62F8fCB88e4b88d6",
+      "agentWallet": "0x3C0051722f04CD25563C250a62F8fCB88e4b88d6",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json,%7B%22type%22%3A%22https%3A%2F%2Feips.ethereum.org%2FEIPS%2Feip-8004%23registration-v1%22%2C%22nam"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://monitor-agent-demo.vercel.app/mcp",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:25.502Z",
+          "httpStatus": 404,
+          "latencyMs": 311,
+          "error": "HTTP 404"
+        },
+        {
+          "kind": "web",
+          "endpoint": "https://monitor-agent-demo.vercel.app/",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:25.503Z",
+          "httpStatus": 404,
+          "latencyMs": 312,
+          "error": "HTTP 404"
+        }
+      ],
+      "liveStatus": "dead",
+      "reputation": {
+        "count": 4,
+        "value": 87.25,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 1,
+        "byTag": {
+          "quality": {
+            "count": 2,
+            "mean": 88
+          },
+          "uptime": {
+            "count": 1,
+            "mean": 92
+          },
+          "successRate": {
+            "count": 1,
+            "mean": 81
+          }
+        }
+      },
+      "scan": {
+        "totalScore": 12.03,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 4
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:26.393Z"
+    },
+    {
+      "key": "97:1779",
+      "chainId": 97,
+      "tokenId": "1779",
+      "name": "yield-agent",
+      "description": "YieldAgent move capital para onde rende mais na BNB Smart Chain. Analisa pools de liquidez, lending e staking, rebalanceia posições e reporta o melhor yield disponível, sempre em modo simulação para segurança.",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=256&q=80",
+      "category": "yield",
+      "classification": {
+        "category": "yield",
+        "confidence": 0.63,
+        "scores": {
+          "rebalancing": 3,
+          "yield": 5
+        },
+        "matched": [
+          "rebalancing:rebalanceia",
+          "yield:yield",
+          "yield:staking"
+        ]
+      },
+      "protocols": [
+        "MCP",
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://yield-agent-demo.vercel.app/",
+        "mcp": "https://yield-agent-demo.vercel.app/mcp"
+      },
+      "x402": true,
+      "owner": "0x3C0051722f04CD25563C250a62F8fCB88e4b88d6",
+      "agentWallet": "0x3C0051722f04CD25563C250a62F8fCB88e4b88d6",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json,%7B%22type%22%3A%22https%3A%2F%2Feips.ethereum.org%2FEIPS%2Feip-8004%23registration-v1%22%2C%22nam"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://yield-agent-demo.vercel.app/mcp",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:25.217Z",
+          "httpStatus": 404,
+          "latencyMs": 295,
+          "error": "HTTP 404"
+        },
+        {
+          "kind": "web",
+          "endpoint": "https://yield-agent-demo.vercel.app/",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:25.217Z",
+          "httpStatus": 404,
+          "latencyMs": 297,
+          "error": "HTTP 404"
+        }
+      ],
+      "liveStatus": "dead",
+      "reputation": {
+        "count": 3,
+        "value": 84.66666666666667,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 1,
+        "byTag": {
+          "quality": {
+            "count": 1,
+            "mean": 82
+          },
+          "revenues": {
+            "count": 1,
+            "mean": 93
+          },
+          "successRate": {
+            "count": 1,
+            "mean": 79
+          }
+        }
+      },
+      "scan": {
+        "totalScore": 12.03,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 3
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:26.061Z"
+    },
+    {
+      "key": "97:1778",
+      "chainId": 97,
+      "tokenId": "1778",
+      "name": "health-factor-agent",
+      "description": "HealthFactorAgent monitora posições de empréstimo (health factor) na BNB Smart Chain. Alerta proativamente antes da liquidação, sugere rebalanceamento e estima o risco de quedas de preço dos colaterais.",
+      "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=256&q=80",
+      "category": "health-factor",
+      "classification": {
+        "category": "health-factor",
+        "confidence": 0.6,
+        "scores": {
+          "rebalancing": 3,
+          "health-factor": 9,
+          "monitoring": 3
+        },
+        "matched": [
+          "rebalancing:rebalanceamento",
+          "health-factor:health factor",
+          "health-factor:liquidation_risk",
+          "monitoring:monitora"
+        ]
+      },
+      "protocols": [
+        "MCP",
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://health-factor-agent-demo.vercel.app/",
+        "mcp": "https://health-factor-agent-demo.vercel.app/mcp"
+      },
+      "x402": true,
+      "owner": "0x3C0051722f04CD25563C250a62F8fCB88e4b88d6",
+      "agentWallet": "0x3C0051722f04CD25563C250a62F8fCB88e4b88d6",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json,%7B%22type%22%3A%22https%3A%2F%2Feips.ethereum.org%2FEIPS%2Feip-8004%23registration-v1%22%2C%22nam"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://health-factor-agent-demo.vercel.app/mcp",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:25.382Z",
+          "httpStatus": 404,
+          "latencyMs": 325,
+          "error": "HTTP 404"
+        },
+        {
+          "kind": "web",
+          "endpoint": "https://health-factor-agent-demo.vercel.app/",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:25.383Z",
+          "httpStatus": 404,
+          "latencyMs": 323,
+          "error": "HTTP 404"
+        }
+      ],
+      "liveStatus": "dead",
+      "reputation": {
+        "count": 3,
+        "value": 86.66666666666667,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 1,
+        "byTag": {
+          "safety": {
+            "count": 1,
+            "mean": 90
+          },
+          "quality": {
+            "count": 1,
+            "mean": 86
+          },
+          "responseTime": {
+            "count": 1,
+            "mean": 84
+          }
+        }
+      },
+      "scan": {
+        "totalScore": 12.02,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 3
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:26.322Z"
+    },
+    {
+      "key": "97:1777",
+      "chainId": 97,
+      "tokenId": "1777",
+      "name": "grid-trading-agent",
+      "description": "GridTradingAgent executa estratégia de grid automatizada em faixas definidas na BNB Smart Chain. Cria, monitora e encerra grades de ordens em pares de liquidez, com simulação (paper trading) segura para demonstração.",
+      "image": "https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=256&q=80",
+      "category": "grid",
+      "classification": {
+        "category": "grid",
+        "confidence": 0.4,
+        "scores": {
+          "grid": 4,
+          "monitoring": 3,
+          "trading": 3
+        },
+        "matched": [
+          "grid:grid",
+          "monitoring:monitora",
+          "trading:trading"
+        ]
+      },
+      "protocols": [
+        "MCP",
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "https://grid-trading-agent-demo.vercel.app/",
+        "mcp": "https://grid-trading-agent-demo.vercel.app/mcp"
+      },
+      "x402": true,
+      "owner": "0x3C0051722f04CD25563C250a62F8fCB88e4b88d6",
+      "agentWallet": "0x3C0051722f04CD25563C250a62F8fCB88e4b88d6",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json,%7B%22type%22%3A%22https%3A%2F%2Feips.ethereum.org%2FEIPS%2Feip-8004%23registration-v1%22%2C%22nam"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://grid-trading-agent-demo.vercel.app/mcp",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:25.494Z",
+          "httpStatus": 404,
+          "latencyMs": 318,
+          "error": "HTTP 404"
+        },
+        {
+          "kind": "web",
+          "endpoint": "https://grid-trading-agent-demo.vercel.app/",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:25.495Z",
+          "httpStatus": 404,
+          "latencyMs": 327,
+          "error": "HTTP 404"
+        }
+      ],
+      "liveStatus": "dead",
+      "reputation": {
+        "count": 3,
+        "value": 84.33333333333333,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 1,
+        "byTag": {
+          "quality": {
+            "count": 1,
+            "mean": 85
+          },
+          "tradingYield": {
+            "count": 1,
+            "mean": 90
+          },
+          "responseTime": {
+            "count": 1,
+            "mean": 78
+          }
+        }
+      },
+      "scan": {
+        "totalScore": 12.02,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 3
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:26.382Z"
+    },
+    {
+      "key": "97:2025",
+      "chainId": 97,
+      "tokenId": "2025",
+      "name": "The Sidekick agent",
+      "description": "Autonomous BNB trading agent with verifiable on-chain behaviour + reputation, listed on The Sidekick marketplace.",
+      "image": "",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [
+        "MCP",
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {},
+        "a2a": "https://sidekick.example/.well-known/agent-card.json",
+        "mcp": "https://mcp.sidekick.example/"
+      },
+      "x402": false,
+      "owner": "0xe1DA3bdD4189FDEfB2eF8A73bd37A4083F284477",
+      "agentWallet": "0xe1DA3bdD4189FDEfB2eF8A73bd37A4083F284477",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://sidekick.example/.well-known/agent-card.json",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:24.042Z",
+          "latencyMs": 3,
+          "error": "fetch failed"
+        },
+        {
+          "kind": "mcp",
+          "endpoint": "https://mcp.sidekick.example/",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:24.043Z",
+          "latencyMs": 2,
+          "error": "fetch failed"
+        }
+      ],
+      "liveStatus": "dead",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 12.02,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:24.920Z"
+    },
+    {
+      "key": "97:1885",
+      "chainId": 97,
+      "tokenId": "1885",
+      "name": "Delegate Grid Pilot",
+      "description": "Turns a PancakeSwap pair’s swings into bounded buy-low/sell-high orders.",
+      "image": "",
+      "category": "grid",
+      "classification": {
+        "category": "grid",
+        "confidence": 0.57,
+        "scores": {
+          "grid": 4,
+          "trading": 3
+        },
+        "matched": [
+          "grid:grid ",
+          "trading:buy"
+        ]
+      },
+      "protocols": [
+        "MCP",
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "http://127.0.0.1:43126/agents/grid-pilot/health",
+        "mcp": "http://127.0.0.1:43126/agents/grid-pilot/mcp"
+      },
+      "x402": true,
+      "owner": "0x546dd351364e683B72166dfc47c65767ce9166E0",
+      "agentWallet": "0x546dd351364e683B72166dfc47c65767ce9166E0",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6IlR1cm5zIGEgUGFuY2FrZVN3YXAgcGFpclx1MjAxOXMgc3dpbmdzIGludG8gYm91bmRlZCB"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "http://127.0.0.1:43126/agents/grid-pilot/mcp",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:24.477Z",
+          "latencyMs": 4,
+          "error": "fetch failed"
+        },
+        {
+          "kind": "web",
+          "endpoint": "http://127.0.0.1:43126/agents/grid-pilot/health",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:24.478Z",
+          "latencyMs": 2,
+          "error": "fetch failed"
+        }
+      ],
+      "liveStatus": "dead",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 12.02,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:25.204Z"
+    },
+    {
+      "key": "97:1886",
+      "chainId": 97,
+      "tokenId": "1886",
+      "name": "Delegate Yield Steward",
+      "description": "Moves eligible idle or supplied assets only when net yield clears switching costs.",
+      "image": "",
+      "category": "yield",
+      "classification": {
+        "category": "yield",
+        "confidence": 1,
+        "scores": {
+          "yield": 3
+        },
+        "matched": [
+          "yield:yield"
+        ]
+      },
+      "protocols": [
+        "MCP",
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "http://127.0.0.1:43126/agents/yield-steward/health",
+        "mcp": "http://127.0.0.1:43126/agents/yield-steward/mcp"
+      },
+      "x402": true,
+      "owner": "0x3937efd09CF639052982ea2AB3723d735B28Fb16",
+      "agentWallet": "0x3937efd09CF639052982ea2AB3723d735B28Fb16",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6Ik1vdmVzIGVsaWdpYmxlIGlkbGUgb3Igc3VwcGxpZWQgYXNzZXRzIG9ubHkgd2hlbiBuZXQ"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "http://127.0.0.1:43126/agents/yield-steward/mcp",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:24.479Z",
+          "latencyMs": 3,
+          "error": "fetch failed"
+        },
+        {
+          "kind": "web",
+          "endpoint": "http://127.0.0.1:43126/agents/yield-steward/health",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:24.479Z",
+          "latencyMs": 3,
+          "error": "fetch failed"
+        }
+      ],
+      "liveStatus": "dead",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 12.02,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:25.214Z"
+    },
+    {
+      "key": "97:1887",
+      "chainId": 97,
+      "tokenId": "1887",
+      "name": "Delegate Safety Sentinel",
+      "description": "Watches BNB lending positions and can propose a capped repay or top-up.",
+      "image": "",
+      "category": "monitoring",
+      "classification": {
+        "category": "monitoring",
+        "confidence": 0.6,
+        "scores": {
+          "health-factor": 2,
+          "monitoring": 3
+        },
+        "matched": [
+          "health-factor:repay",
+          "monitoring:watches"
+        ]
+      },
+      "protocols": [
+        "MCP",
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "http://127.0.0.1:43126/agents/safety-sentinel/health",
+        "mcp": "http://127.0.0.1:43126/agents/safety-sentinel/mcp"
+      },
+      "x402": true,
+      "owner": "0xC5166536d753c7c8Cc27c41B59c2D57F960f3F27",
+      "agentWallet": "0xC5166536d753c7c8Cc27c41B59c2D57F960f3F27",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6IldhdGNoZXMgQk5CIGxlbmRpbmcgcG9zaXRpb25zIGFuZCBjYW4gcHJvcG9zZSBhIGNhcHB"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "http://127.0.0.1:43126/agents/safety-sentinel/mcp",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:24.384Z",
+          "latencyMs": 2,
+          "error": "fetch failed"
+        },
+        {
+          "kind": "web",
+          "endpoint": "http://127.0.0.1:43126/agents/safety-sentinel/health",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:24.384Z",
+          "latencyMs": 2,
+          "error": "fetch failed"
+        }
+      ],
+      "liveStatus": "dead",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 12.02,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:25.216Z"
+    },
+    {
+      "key": "97:1884",
+      "chainId": 97,
+      "tokenId": "1884",
+      "name": "Delegate Range Keeper",
+      "description": "Manages PancakeSwap concentrated-liquidity ranges under a bounded mandate.",
+      "image": "",
+      "category": "rebalancing",
+      "classification": {
+        "category": "rebalancing",
+        "confidence": 1,
+        "scores": {
+          "rebalancing": 3
+        },
+        "matched": [
+          "rebalancing:liquidity ranges"
+        ]
+      },
+      "protocols": [
+        "MCP",
+        "Web",
+        "WEB"
+      ],
+      "endpoints": {
+        "other": {},
+        "web": "http://127.0.0.1:43126/agents/range-keeper/health",
+        "mcp": "http://127.0.0.1:43126/agents/range-keeper/mcp"
+      },
+      "x402": true,
+      "owner": "0xB14b8D77Dffed7f1c22738C4Ab91500C2381DB49",
+      "agentWallet": "0xB14b8D77Dffed7f1c22738C4Ab91500C2381DB49",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJkZXNjcmlwdGlvbiI6Ik1hbmFnZXMgUGFuY2FrZVN3YXAgY29uY2VudHJhdGVkLWxpcXVpZGl0eSByYW5nZXMgdW5"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "http://127.0.0.1:43126/agents/range-keeper/mcp",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:25.096Z",
+          "latencyMs": 5,
+          "error": "fetch failed"
+        },
+        {
+          "kind": "web",
+          "endpoint": "http://127.0.0.1:43126/agents/range-keeper/health",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:25.097Z",
+          "latencyMs": 4,
+          "error": "fetch failed"
+        }
+      ],
+      "liveStatus": "dead",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 12.02,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:25.674Z"
+    },
+    {
+      "key": "97:2076",
+      "chainId": 97,
+      "tokenId": "2076",
+      "name": "Sentinel Health Guard",
+      "description": "Monitors BNB Smart Chain lending positions across Venus and Aave V3 in real time and defends against liquidation. Watches each position's health factor continuously; when it drops near a risk threshold, the agent automatically executes a partial repay or tops up collateral to restore a safe margin. Built for borrowers who can't watch their positions 24/7. Free to configure; optional 0.1% fee on each defensive action taken.",
+      "image": "",
+      "category": "health-factor",
+      "classification": {
+        "category": "health-factor",
+        "confidence": 0.79,
+        "scores": {
+          "health-factor": 11,
+          "monitoring": 3
+        },
+        "matched": [
+          "health-factor:health factor",
+          "health-factor:liquidation",
+          "health-factor:venus",
+          "monitoring:monitors"
+        ]
+      },
+      "protocols": [
+        "MCP"
+      ],
+      "endpoints": {
+        "other": {},
+        "mcp": "https://api.sentinelhealthguard.example/mcp"
+      },
+      "x402": false,
+      "owner": "0x9E2d2c2522a904EF07DC61F88D189833476D4A58",
+      "agentWallet": "0x9E2d2c2522a904EF07DC61F88D189833476D4A58",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,ewogICJ0eXBlIjogImh0dHBzOi8vZWlwcy5ldGhlcmV1bS5vcmcvRUlQUy9laXAtODAwNCNyZWdpc3RyYXRpb24tdjE"
+      },
+      "probes": [
+        {
+          "kind": "mcp",
+          "endpoint": "https://api.sentinelhealthguard.example/mcp",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:23.605Z",
+          "latencyMs": 4,
+          "error": "fetch failed"
+        }
+      ],
+      "liveStatus": "dead",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:24.144Z"
+    },
+    {
+      "key": "97:2026",
+      "chainId": 97,
+      "tokenId": "2026",
+      "name": "The Sidekick agent",
+      "description": "Autonomous BNB trading agent with verifiable on-chain behaviour + reputation, listed on The Sidekick marketplace.",
+      "image": "",
+      "category": "trading",
+      "classification": {
+        "category": "trading",
+        "confidence": 1,
+        "scores": {
+          "trading": 3
+        },
+        "matched": [
+          "trading:trading"
+        ]
+      },
+      "protocols": [
+        "MCP",
+        "A2A"
+      ],
+      "endpoints": {
+        "other": {},
+        "a2a": "https://sidekick.example/.well-known/agent-card.json",
+        "mcp": "https://mcp.sidekick.example/"
+      },
+      "x402": false,
+      "owner": "0xe1DA3bdD4189FDEfB2eF8A73bd37A4083F284477",
+      "agentWallet": "0xe1DA3bdD4189FDEfB2eF8A73bd37A4083F284477",
+      "registration": {
+        "ok": true,
+        "source": "data-uri",
+        "warnings": [],
+        "onchainUri": "data:application/json;base64,eyJ0eXBlIjoiaHR0cHM6Ly9laXBzLmV0aGVyZXVtLm9yZy9FSVBTL2VpcC04MDA0I3JlZ2lzdHJhdGlvbi12MSIsIm5"
+      },
+      "probes": [
+        {
+          "kind": "a2a",
+          "endpoint": "https://sidekick.example/.well-known/agent-card.json",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:23.893Z",
+          "latencyMs": 3,
+          "error": "fetch failed"
+        },
+        {
+          "kind": "mcp",
+          "endpoint": "https://mcp.sidekick.example/",
+          "state": "dead",
+          "checkedAt": "2026-09-04T16:56:23.894Z",
+          "latencyMs": 2,
+          "error": "fetch failed"
+        }
+      ],
+      "liveStatus": "dead",
+      "reputation": {
+        "count": 0,
+        "value": null,
+        "rawValue": null,
+        "decimals": 0,
+        "clients": 0,
+        "byTag": {}
+      },
+      "scan": {
+        "totalScore": 0,
+        "healthStatus": null,
+        "endpointVerified": false,
+        "feedbacks": 0
+      },
+      "performance": null,
+      "source": "8004scan",
+      "updatedAt": "2026-09-04T16:56:24.803Z"
+    }
+  ],
+  "quality": {
+    "candidates": 92,
+    "registrationOk": 81,
+    "registrationFailed": 11,
+    "withEndpoint": 58,
+    "live": 31,
+    "gated": 12,
+    "dead": 11,
+    "unresolved": 38,
+    "byCategory": {
+      "grid": 8,
+      "health-factor": 11,
+      "yield": 7,
+      "monitoring": 5,
+      "research": 5,
+      "other": 36,
+      "rebalancing": 6,
+      "trading": 14
+    },
+    "warnings": {
+      "A2A endpoint has unresolved template ": 4,
+      "Termix Platform endpoint has unresolved template ": 4,
+      "no services advertised": 18,
+      "missing type": 6
+    },
+    "scanTotals": {
+      "56:endpoint_verified": 5,
+      "56:has_mcp": 5366,
+      "56:has_a2a": 27024,
+      "56:x402": 70442,
+      "56:latest": 303366,
+      "97:endpoint_verified": 0,
+      "97:has_mcp": 82,
+      "97:has_a2a": 780,
+      "97:x402": 817,
+      "97:latest": 2076
+    }
+  }
+}
