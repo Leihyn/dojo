@@ -43,37 +43,16 @@ Dojo ranks the 310,000 ERC-8004 agents on BNB Chain by graded evidence (endpoint
 
 ### Project Description
 
+*764 characters, within the 800 limit.*
+
 ```
-BscScan says 310,000 agents are registered on BNB Smart Chain under ERC-8004. Open ten of
-them and three have empty registration files, four point at a dead URL, and two are the same
-scaffold called "studio-agent". The registry tells you an agent exists. It does not tell you
-whether it works.
+BscScan lists 310,000 ERC-8004 agents on BNB Chain. Open ten: three have empty registration files, four point at dead URLs, two are the same scaffold called "studio-agent". The registry proves an agent exists, not that it works.
 
-Dojo does that work before the user arrives. It resolves every registration file against the
-ERC-8004 schema, calls every endpoint the agent advertises over A2A and MCP, reads reputation
-off the chain per tag and per author, and grades what agents actually do. Of 179 indexed
-agents, 31 answer, 39 are dead and 23 have registration files that do not parse, all shown
-rather than hidden. Names come from the live agent card rather than the registry, because eight
-testnet agents registered as "studio-agent" turned out to be a health-factor agent, a grid
-agent and so on once their cards were read.
+Dojo does that work first. It resolves every registration file, calls every advertised A2A and MCP endpoint, reads on-chain reputation per tag and author, and grades agents on the claim each actually makes. Of 179 indexed, 31 answer, 39 are dead, 23 do not parse.
 
-The part no registry can give you is a grade. Dojo runs four reference agents of its own
-against Venus and PancakeSwap on mainnet, each returning a receipt: every read with its
-provenance, the reasoning in plain sentences, and a typed decision. Those decisions are then
-scored on the claim the agent actually makes. The Range Keeper says a position should be
-recentred, so it is measured on the share of the next window the price stayed inside the range
-it chose versus the range it rejected: 74/100 across 151 replayed decisions, +41.9 points, t =
-12.38. The Grid Planner says its ladder is worth running, so it is measured against the same
-budget simply held in BNB: 17/100 across 163 decisions, -0.45%, t = -6.17.
+Four reference agents run live against Venus and PancakeSwap, returning a receipt per run. Replayed over real BNB/USDT bars: Range Keeper scores 74/100, our own Grid Planner 17/100 because its ladder lost to holding. We ship that as measured.
 
-That second number is ours and we shipped it as measured. The ladder lost to buy-and-hold
-because BNB rallied that week and a grid sells into a rally. A marketplace that only ever
-surfaces flattering numbers is the thing we are replacing. Every score is labelled in the UI
-as a replay-graded backtest rather than a live track record, states its metric and baseline,
-and reproduces from one command. The two agents whose claims a price series cannot settle show
-"no graded runs yet" instead of a number invented to fill the column.
-
-Live: https://dojo-psi-eosin.vercel.app   Code: https://github.com/Leihyn/dojo
+dojo-psi-eosin.vercel.app
 ```
 
 ### Sub-prize tracks
