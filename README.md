@@ -74,7 +74,9 @@ a live track record. And only the two price-driven agents are replay-gradeable: 
 and Yield Scout make claims that a price series cannot settle, so they show "no graded runs yet"
 rather than a number invented to fill the column.
 
-Reproduce it:
+Reproduce it — the window is the last 2,000 bars **at the time you run it**, so it rolls forward and
+your numbers will not match these exactly. A run an hour later scored 75.7 and 18.1. The ordering
+and the sign of the excess are what should be stable, not the third significant figure:
 
 ```bash
 pnpm --filter @dojo/core replay -- --bars 2000 --interval 5m --horizon 240 --width 2 --age-min 720 --root ../..

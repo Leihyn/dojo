@@ -35,6 +35,9 @@ export default async function AgentsPage({ searchParams }: { searchParams: Promi
       <form className="flex gap-2">
         {category && <input type="hidden" name="category" value={category} />}
         {live && <input type="hidden" name="live" value="1" />}
+        {/* Chain and protocol have to ride along too, or searching silently clears them. */}
+        {chainId && <input type="hidden" name="chain" value={String(chainId)} />}
+        {protocol && <input type="hidden" name="protocol" value={protocol} />}
         <input name="q" defaultValue={q} placeholder="Search" className="w-full max-w-md rounded-md border border-white/15 bg-black/30 px-3 py-1.5 text-sm text-white focus:border-amber-400/60 focus:outline-none" />
         <button className="rounded-md border border-white/15 px-3 py-1.5 text-sm">Search</button>
       </form>
