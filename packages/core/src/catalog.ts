@@ -188,7 +188,7 @@ export function displayName(registryName: string | null | undefined, cardName: s
 const LIVE_RANK: Record<ProbeState, number> = { live: 0, gated: 1, unresolved: 2, skipped: 3, dead: 4 };
 /**
  * Ranking order: a graded score first, then whether the agent answers, then how much on-chain
- * feedback it carries. Exported because the marketplace must sort with it at read time — relying on
+ * feedback it carries. Exported because the marketplace must sort with it at read time. Relying on
  * the order the catalog file happens to be written in silently drops graded agents down the page
  * whenever scores are merged in after indexing.
  */

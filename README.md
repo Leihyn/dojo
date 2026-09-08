@@ -69,12 +69,12 @@ The Grid Planner losing to buy-and-hold is the result, not a bug: BNB ran from $
 that window and a ladder sells into a rally. A marketplace that only ever surfaced flattering
 numbers would be the thing this project exists to replace, so the number ships as measured.
 
-Two caveats stated plainly. This is a **backtest, and the UI labels every score as one** — it is not
+Two caveats stated plainly. This is a **backtest, and the UI labels every score as one**. It is not
 a live track record. And only the two price-driven agents are replay-gradeable: the Health Sentinel
 and Yield Scout make claims that a price series cannot settle, so they show "no graded runs yet"
 rather than a number invented to fill the column.
 
-Reproduce it — the window is the last 2,000 bars **at the time you run it**, so it rolls forward and
+Reproduce it. The window is the last 2,000 bars **at the time you run it**, so it rolls forward and
 your numbers will not match these exactly. A run an hour later scored 75.7 and 18.1. The ordering
 and the sign of the excess are what should be stable, not the third significant figure:
 
@@ -86,8 +86,8 @@ pnpm --filter @dojo/core replay -- --bars 2000 --interval 5m --horizon 240 --wid
 
 `docs/AGENT_ADVANTAGE_REPORT.md` is generated, not written: it runs three real tasks twice each,
 once through a Dojo agent and once through raw sequential contract reads, and reports what it
-measured. The headline is not the time saved. On the yield task the two arms disagreed — 2.80% APY
-against 1.66% — because the Venus API rate and the raw `supplyRatePerBlock` rate are different
+measured. The headline is not the time saved. On the yield task the two arms disagreed, 2.80% APY
+against 1.66%, because the Venus API rate and the raw `supplyRatePerBlock` rate are different
 quantities and nothing on a block explorer tells you which one you are holding. The agent's receipt
 names its source. That is the failure being prevented: not slowness, but confidently acting on the
 wrong number.

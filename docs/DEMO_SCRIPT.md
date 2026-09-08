@@ -1,16 +1,16 @@
-# Dojo — demo script
+# Dojo: demo script
 
 Target: 2 minutes 30. One browser window, one terminal. No slides.
 
 ## Before recording
 
-- [ ] `https://dojo-psi-eosin.vercel.app` open, logged out, cache warm (click through every page once first — cold serverless reads add two seconds)
-- [ ] Second tab on `https://bscscan.com/token/0x8004A169FB4a3325136EB29fA0ceB6D2e539a432` — the live registry count is the hook
+- [ ] `https://dojo-psi-eosin.vercel.app` open, logged out, cache warm (click through every page once first, because cold serverless reads add two seconds)
+- [ ] Second tab on `https://bscscan.com/token/0x8004A169FB4a3325136EB29fA0ceB6D2e539a432`, where the live registry count is the hook
 - [ ] Terminal in `~/Desktop/dev/dojo`, font at 18pt, ready to run the replay command
 - [ ] Zoom the browser to 110%; the scorecard table is the smallest thing on screen and it has to be readable
 - [ ] Close Slack, Notifications off
 
-## The hook (0:00 – 0:20)
+## The hook (0:00 to 0:20)
 
 **[Do: BscScan tab, scroll to the holder/token count]**
 
@@ -18,23 +18,23 @@ Target: 2 minutes 30. One browser window, one terminal. No slides.
 >  Say you want one thing: something that watches your Venus position and tells you before you get
 >  liquidated. So you start opening them."
 
-**[Do: click three registry entries fast — an empty registration, a dead URL, a "studio-agent"]**
+**[Do: click three registry entries fast: an empty registration, a dead URL, a "studio-agent"]**
 
-> "Empty registration file. Dead endpoint. And this one is called 'studio-agent' — so are seven
+> "Empty registration file. Dead endpoint. And this one is called 'studio-agent', and so are seven
 >  others. Forty minutes in, you have hired nobody. The registry tells you an agent exists.
 >  It does not tell you whether it works."
 
-## The turn (0:20 – 0:35)
+## The turn (0:20 to 0:35)
 
 **[Do: open dojo-psi-eosin.vercel.app]**
 
 > "Dojo does that work before you arrive. It reads the registry, resolves every registration file,
->  calls every endpoint the agent advertises, reads its reputation off-chain — sorry, off the chain —
+>  calls every endpoint the agent advertises, reads its reputation off the chain,
 >  and grades what it actually does. Four jobs, equal billing."
 
 **[Do: hover the four category tiles]**
 
-## Find and understand (0:35 – 1:20)
+## Find and understand (0:35 to 1:20)
 
 **[Do: click Health Factor Monitoring]**
 
@@ -47,11 +47,11 @@ Target: 2 minutes 30. One browser window, one terminal. No slides.
 
 **[Do: open Dojo Health Sentinel detail page]**
 
-> "Registration warnings, endpoint probes with timestamps, on-chain reputation read live — per tag
+> "Registration warnings, endpoint probes with timestamps, on-chain reputation read live, per tag
 >  and per author, because an uptime of 100 and a response time of 230 must never be averaged into
 >  one number."
 
-## The money shot (1:20 – 2:05)
+## The money shot (1:20 to 2:05)
 
 **This is the part that lands. Do not rush it.**
 
@@ -62,7 +62,7 @@ Target: 2 minutes 30. One browser window, one terminal. No slides.
 >  recentre, the price stayed inside the range it picked eighty-eight percent of the next four hours,
 >  forty-two points better than leaving the position alone. T-statistic of twelve."
 
-**[Do: now open Dojo Grid Planner — same section]**
+**[Do: now open Dojo Grid Planner, same section]**
 
 > "And here is the one we built ourselves, scoring seventeen out of a hundred."
 
@@ -76,16 +76,16 @@ Target: 2 minutes 30. One browser window, one terminal. No slides.
 
 > "And every score says exactly how it was measured."
 
-## Activate (2:05 – 2:25)
+## Activate (2:05 to 2:25)
 
 **[Do: click Try / Run on the Health Sentinel, submit empty input]**
 
 > "Hiring produces a receipt. It picked a real borrower off recent Venus logs, read five markets on
 >  mainnet, computed the health factor, and cross-checked its own arithmetic against Venus's own
->  getAccountLiquidity — and it tells you when those two disagree. Every read tagged live. Half a
+>  getAccountLiquidity, and it tells you when those two disagree. Every read tagged live. Half a
 >  second."
 
-## Close (2:25 – 2:40)
+## Close (2:25 to 2:40)
 
 > "Registry entries are claims. Probes, receipts and replay are evidence. Dojo ranks three hundred
 >  thousand agents by the second one."
@@ -100,11 +100,11 @@ pnpm --filter @dojo/core replay -- --bars 2000 --interval 5m --horizon 240 --wid
 
 ## If things go wrong
 
-**The live BSC read hangs on the Try page** — public dataseed nodes rate-limit. Cut to the receipt
+**The live BSC read hangs on the Try page.** Public dataseed nodes rate-limit. Cut to the receipt
 already on screen from the warm-up pass; the numbers are identical.
 
-**A category page shows fewer agents than you said** — say the count you see, not the count in the
+**A category page shows fewer agents than you said.** Say the count you see, not the count in the
 script. The catalog is rebuilt from a live registry and moves between runs.
 
-**Vercel cold start** — the first request after a quiet minute takes ~2s. Click every page once
+**Vercel cold start.** The first request after a quiet minute takes ~2s. Click every page once
 before you hit record.

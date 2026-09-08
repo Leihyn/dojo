@@ -2,7 +2,7 @@
  * Agent Advantage Report harness (TermiX track).
  *
  * Three real tasks, each run twice: once by hiring a Dojo reference agent, once the way a competent
- * person does it without one — opening the contract on BscScan and reading it function by function.
+ * person does it without one, opening the contract on BscScan and reading it function by function.
  *
  * What is measured and what is assumed is kept strictly apart. Machine wall time and the number of
  * distinct contract reads are MEASURED on both arms. Human time is an ASSUMPTION, stated as a
@@ -198,7 +198,7 @@ const lines: string[] = [];
 lines.push("# Agent Advantage Report");
 lines.push("");
 lines.push("Three tasks a BNB Chain user actually has, each done twice: once by hiring a Dojo reference");
-lines.push("agent, once the way it gets done without one — opening the contract on BscScan and reading it");
+lines.push("agent, once the way it gets done without one, opening the contract on BscScan and reading it");
 lines.push("function by function.");
 lines.push("");
 lines.push("**What is measured and what is assumed.** Wall time and the number of distinct contract reads");
@@ -234,7 +234,7 @@ if (div && div.divergence) {
   const d = div.divergence;
   const gap = Math.abs(d.agentValue - d.manualValue) / Math.max(d.manualValue, 1e-9) * 100;
   lines.push(`**The two arms disagreed on ${div.id}, and that is the whole argument.** The agent answered`);
-  lines.push(`**${d.agentValue.toFixed(2)}${d.unit}** and the manual path answered **${d.manualValue.toFixed(2)}${d.unit}** — a ${gap.toFixed(0)}% gap on the`);
+  lines.push(`**${d.agentValue.toFixed(2)}${d.unit}** and the manual path answered **${d.manualValue.toFixed(2)}${d.unit}**, a ${gap.toFixed(0)}% gap on the`);
   lines.push("number the user is about to move money on. Neither is a bug:");
   lines.push(`${d.why}. Both are defensible; they are not the same question.`);
   lines.push("");
@@ -246,23 +246,23 @@ if (div && div.divergence) {
 }
 lines.push("**Only one arm checks itself.** In T1 the agent recomputes the position from the markets and then");
 lines.push("compares its own answer with the protocol's `getAccountLiquidity`, and reports the disagreement");
-lines.push("when there is one. The manual path produces a number with nothing to test it against — which is");
+lines.push("when there is one. The manual path produces a number with nothing to test it against, which is");
 lines.push("the failure mode that matters, because a wrong health factor looks exactly like a right one.");
 lines.push("");
 lines.push("## Task detail");
 for (const t of results) {
   lines.push("");
-  lines.push(`### ${t.id} — ${t.title}`);
+  lines.push(`### ${t.id}: ${t.title}`);
   lines.push("");
   lines.push(`*${t.category}*. ${t.question}`);
   lines.push("");
-  lines.push(`**With the agent** — ${fmt(t.agent.wallMs)}, ${t.agent.lookups} read${t.agent.lookups === 1 ? "" : "s"}, receipt \`${t.agent.receiptId}\``);
+  lines.push(`**With the agent.** ${fmt(t.agent.wallMs)}, ${t.agent.lookups} read${t.agent.lookups === 1 ? "" : "s"}, receipt \`${t.agent.receiptId}\``);
   lines.push("");
   lines.push(`> ${t.agent.answer}`);
   lines.push("");
   for (const n of t.agent.notes) lines.push(`- ${n}`);
   lines.push("");
-  lines.push(`**Without** — ${fmt(t.manual.wallMs)} of RPC, ${t.manual.lookups} read${t.manual.lookups === 1 ? "" : "s"}, ~${humanMin(t.manual.lookups).toFixed(0)} minutes of human time`);
+  lines.push(`**Without.** ${fmt(t.manual.wallMs)} of RPC, ${t.manual.lookups} read${t.manual.lookups === 1 ? "" : "s"}, ~${humanMin(t.manual.lookups).toFixed(0)} minutes of human time`);
   lines.push("");
   lines.push(`> ${t.manual.answer}`);
   lines.push("");

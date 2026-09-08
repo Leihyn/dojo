@@ -7,6 +7,7 @@ import { createHash } from "node:crypto";
 import type { Address } from "viem";
 import { isAddress } from "viem";
 import type { Category } from "./classify";
+import { REGISTRATION_TYPE } from "./registration";
 import { newReceiptId, receiptSchema, type Decision, type Receipt, type ToolCall } from "./receipts";
 import { checkRange, planGrid, readV2Price, readV3State } from "./pancake";
 import { findRecentBorrowers, readVenusHealth, readVenusStableYields } from "./venus";
@@ -121,6 +122,27 @@ export async function runRefAgent(name: RefAgentName, input: Record<string, unkn
 
 export function hashReceipt(r: Receipt): `0x${string}` {
   return `0x${createHash("sha256").update(JSON.stringify(r)).digest("hex")}`;
+}
+
+/**
+ * The ERC-8004 registration file for a reference agent. This is what `register(agentURI)` points at
+ * on the Identity Registry, and it is deliberately the same shape Dojo demands of everyone else:
+ * a declared type, a description, and services named so that `serviceEndpoints` resolves them.
+ */
+export function registrationFile(def: RefAgentDef, baseUrl: string): Record<string, unknown> {
+  return {
+    type: REGISTRATION_TYPE,
+    name: def.title,
+    description: def.description,
+    services: [
+      { name: "A2A", endpoint: `${baseUrl}/ref/${def.name}/.well-known/agent-card.json`, version: "0.3.0", skills: [def.skill] },
+      { name: "Web", endpoint: `${baseUrl}/try/${def.name}` },
+    ],
+    x402Support: false,
+    active: true,
+    supportedTrust: ["reputation"],
+    "x-dojo": { category: def.category, receipts: true, operator: "Dojo" },
+  };
 }
 
 export function agentCard(def: RefAgentDef, baseUrl: string): Record<string, unknown> {

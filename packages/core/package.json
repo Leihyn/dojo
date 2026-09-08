@@ -9,7 +9,8 @@
     "index": "tsx src/cli/index-agents.ts",
     "test": "vitest run",
     "replay": "tsx src/cli/replay.ts",
-    "advantage": "tsx src/cli/advantage.ts"
+    "advantage": "tsx src/cli/advantage.ts",
+    "register": "tsx src/cli/register-agents.ts"
   },
   "dependencies": {
     "viem": "^2.21.0",

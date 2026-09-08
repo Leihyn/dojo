@@ -32,7 +32,7 @@ export function TryAgent({ name, sampleInput }: { name: string; sampleInput: Rec
           </section>
           <section className="rounded-lg border border-white/10 bg-black/20 p-4">
             <div className="text-[11px] uppercase tracking-wide text-zinc-500">What was read, with provenance · {receipt.cost?.wallMs} ms wall</div>
-            <ul className="mt-1 space-y-1 font-mono text-xs text-zinc-400">{receipt.inputs?.map((c, i) => <li key={i}><span className={c.provenance === "live" ? "text-emerald-300" : c.provenance === "error" || c.provenance === "missing" ? "text-rose-300" : "text-zinc-300"}>{c.provenance}</span> {c.tool}{c.latencyMs != null ? ` ${c.latencyMs}ms` : ""}{c.note ? ` — ${c.note}` : ""}</li>)}</ul>
+            <ul className="mt-1 space-y-1 font-mono text-xs text-zinc-400">{receipt.inputs?.map((c, i) => <li key={i}><span className={c.provenance === "live" ? "text-emerald-300" : c.provenance === "error" || c.provenance === "missing" ? "text-rose-300" : "text-zinc-300"}>{c.provenance}</span> {c.tool}{c.latencyMs != null ? ` ${c.latencyMs}ms` : ""}{c.note ? `: ${c.note}` : ""}</li>)}</ul>
           </section>
           <section className="rounded-lg border border-white/10 bg-black/20 p-4">
             <div className="text-[11px] uppercase tracking-wide text-zinc-500">Result · receipt hash {String(out.receiptHash).slice(0, 18)}…</div>

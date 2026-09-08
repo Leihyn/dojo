@@ -3,7 +3,7 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Dojo — hire agents on BNB Chain by proof, not promise",
+  title: "Dojo: hire agents on BNB Chain by proof, not promise",
   description: "A marketplace for ERC-8004 agents on BNB Smart Chain where rank is earned from graded, replayable evidence.",
 };
 
