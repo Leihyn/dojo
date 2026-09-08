@@ -1,5 +1,5 @@
 import type { Catalog, CatalogEntry, Category } from "@dojo/core";
-import { CATEGORIES } from "@dojo/core";
+import { CATEGORIES, rank } from "@dojo/core";
 import raw from "@/data/catalog.json";
 
 const catalog = raw as unknown as Catalog;
@@ -22,6 +22,8 @@ export interface Filters {
 
 export function filterEntries(f: Filters): CatalogEntry[] {
   const q = f.q?.trim().toLowerCase();
+  // Sort here rather than trusting the order in the snapshot: scores are merged into the catalog
+  // after indexing, so file order does not reflect grading.
   return catalog.entries.filter((e) => {
     if (f.category && e.category !== f.category) return false;
     if (f.live && e.liveStatus !== "live" && e.liveStatus !== "gated") return false;
@@ -29,7 +31,7 @@ export function filterEntries(f: Filters): CatalogEntry[] {
     if (f.protocol && !e.protocols.map((p) => p.toLowerCase()).includes(f.protocol.toLowerCase())) return false;
     if (q && !`${e.name} ${e.description} ${e.tokenId}`.toLowerCase().includes(q)) return false;
     return true;
-  });
+  }).sort(rank);
 }
 
 export interface CategoryCount { category: Category; label: string; blurb: string; core: boolean; total: number; live: number; graded: number }

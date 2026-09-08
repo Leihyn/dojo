@@ -10,6 +10,7 @@ import { loadBars, intervalMinutes } from "../prices";
 import { replayGridPlanner, replayRangeKeeper } from "../replay";
 import { ReceiptStore, type Receipt } from "../receipts";
 import { grade, MIN_GRADED, type Scorecard } from "../grader";
+import { rank, type CatalogEntry } from "../catalog";
 
 const args = new Map<string, string>();
 for (let i = 2; i < process.argv.length; i++) {
@@ -82,7 +83,7 @@ for (const extra of (args.get("copy-scorecards-to") ?? "apps/web/src/data/scorec
 // Merge into the catalog so the marketplace ranks on these numbers.
 let merged = 0;
 try {
-  const catalog = JSON.parse(await readFile(catalogFile, "utf8")) as { entries: Array<{ key: string; performance: Scorecard | null; seedMeta?: { ref?: string } }> };
+  const catalog = JSON.parse(await readFile(catalogFile, "utf8")) as { entries: CatalogEntry[] };
   const byRef: Record<string, string> = { "range-keeper": "97:dojo-range-keeper", "grid-planner": "97:dojo-grid-planner" };
   for (const e of catalog.entries) {
     const target = byRef[e.seedMeta?.ref ?? ""] ?? (scorecards[e.key] ? e.key : undefined);
@@ -90,6 +91,8 @@ try {
     e.performance = { ...scorecards[target], agentKey: e.key };
     merged++;
   }
+  // Re-sort: merging a score changes the ranking, and the marketplace reads this order.
+  catalog.entries.sort(rank);
   await writeFile(catalogFile, JSON.stringify(catalog, null, 2));
   for (const extra of (args.get("copy-to") ?? "apps/web/src/data/catalog.json").split(",").filter(Boolean)) {
     const dest = path.resolve(root, extra);

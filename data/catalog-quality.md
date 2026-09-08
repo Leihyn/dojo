@@ -1,45 +1,46 @@
 # Catalog data quality
 
-Built 2026-09-04T16:56:31.865Z for chains 56, 97.
+Built 2026-09-08T15:33:55.336Z for chains 56, 97.
 
 | Measure | Count |
 |---|---|
-| Candidates enriched | 92 |
-| Registration file resolves and parses | 81 |
-| Registration file missing or broken | 11 |
-| Advertises an endpoint | 58 |
+| Candidates enriched | 179 |
+| Registration file resolves and parses | 156 |
+| Registration file missing or broken | 23 |
+| Advertises an endpoint | 123 |
 | Endpoint answered (live) | 31 |
-| Endpoint answered with auth/payment gate | 12 |
-| Endpoint dead | 11 |
-| Endpoint unresolved (template or non-http) | 38 |
+| Endpoint answered with auth/payment gate | 37 |
+| Endpoint dead | 39 |
+| Endpoint unresolved (template or non-http) | 72 |
 
 ## Registry totals reported by 8004scan
 
 - 56:endpoint_verified: 5
-- 56:has_mcp: 5366
-- 56:has_a2a: 27024
-- 56:x402: 70442
-- 56:latest: 303366
+- 56:has_mcp: 5531
+- 56:has_a2a: 28416
+- 56:x402: 71376
+- 56:latest: 309922
 - 97:endpoint_verified: 0
-- 97:has_mcp: 82
-- 97:has_a2a: 780
-- 97:x402: 817
-- 97:latest: 2076
+- 97:has_mcp: 83
+- 97:has_a2a: 834
+- 97:x402: 942
+- 97:latest: 2217
 
 ## Category split
 
-- other: 36
-- trading: 14
+- other: 91
+- trading: 31
+- grid: 14
 - health-factor: 11
-- grid: 8
-- yield: 7
-- rebalancing: 6
-- monitoring: 5
-- research: 5
+- yield: 10
+- research: 9
+- rebalancing: 7
+- monitoring: 6
 
 ## Most common registration warnings
 
-- no services advertised: 18
-- missing type: 6
-- A2A endpoint has unresolved template : 4
-- Termix Platform endpoint has unresolved template : 4
+- no services advertised: 28
+- A2A endpoint has unresolved template : 16
+- Termix Platform endpoint has unresolved template : 16
+- missing type: 7
+- missing description: 7

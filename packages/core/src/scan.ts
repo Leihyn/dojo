@@ -106,6 +106,14 @@ export class ScanClient {
         await sleep(wait);
         continue;
       }
+      // A 5xx is the upstream having a bad moment, not a bad request. Back off and try again;
+      // failing the whole index run because one filter blipped is not acceptable.
+      if (res.status >= 500) {
+        const wait = 2_000 * (attempt + 1);
+        console.warn(`[scan] ${res.status} on ${pathname}; retry ${attempt + 1}/3 in ${wait / 1000}s`);
+        await sleep(wait);
+        continue;
+      }
       if (!res.ok) throw new Error(`8004scan ${res.status} for ${pathname}`);
       const remaining = Number(res.headers.get("x-ratelimit-remaining-minute") ?? "1");
       if (remaining <= 1) this.nextAllowedAt = Date.now() + 61_000;
@@ -113,7 +121,7 @@ export class ScanClient {
       await this.writeCache(pathname, json);
       return json;
     }
-    throw new Error(`8004scan rate limited on ${pathname}`);
+    throw new Error(`8004scan unavailable after 3 attempts for ${pathname}`);
   }
 
   private async pace() {

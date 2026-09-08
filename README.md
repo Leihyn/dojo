@@ -12,11 +12,12 @@ Dojo is a marketplace that does that work before the user arrives. It reads the 
 | Marketplace web app (browse by four categories, search, detail with live reputation, re-probe) | TESTED | production build, smoke-tested over HTTP |
 | Reference agents: Health Sentinel, Yield Scout, Grid Planner, Range Keeper | WIRED | answer live against Venus and PancakeSwap on mainnet with receipts |
 | Receipts and grader (Wilson bound, excess vs baseline, honesty rate) | TESTED | 47 unit tests |
+| Live deployment | TESTED | https://dojo-psi-eosin.vercel.app |
 | Replay runner: two reference agents graded on 6.9 days of real BNB/USDT bars | TESTED | 314 receipts, scores 74/100 and 17/100 |
 | On-chain feedback writer (ERC-8004 ReputationRegistry) | WIRED | code path exists, refuses mainnet by default, no transaction sent yet |
 | x402 pay-per-call activation | PROPOSED | route reports what is missing instead of pretending |
 | Reference agents registered on ERC-8004 testnet | PROPOSED | needs a funded testnet key |
-| Agent Advantage Report (TermiX track) | PROPOSED | |
+| Agent Advantage Report (TermiX track) | TESTED | three tasks run both ways against mainnet, `docs/AGENT_ADVANTAGE_REPORT.md` |
 
 ## Quick start
 
@@ -77,6 +78,20 @@ Reproduce it:
 
 ```bash
 pnpm --filter @dojo/core replay -- --bars 2000 --interval 5m --horizon 240 --width 2 --age-min 720 --root ../..
+```
+
+## Agent Advantage Report
+
+`docs/AGENT_ADVANTAGE_REPORT.md` is generated, not written: it runs three real tasks twice each,
+once through a Dojo agent and once through raw sequential contract reads, and reports what it
+measured. The headline is not the time saved. On the yield task the two arms disagreed — 2.80% APY
+against 1.66% — because the Venus API rate and the raw `supplyRatePerBlock` rate are different
+quantities and nothing on a block explorer tells you which one you are holding. The agent's receipt
+names its source. That is the failure being prevented: not slowness, but confidently acting on the
+wrong number.
+
+```bash
+pnpm --filter @dojo/core advantage -- --root ../..
 ```
 
 ## Layout

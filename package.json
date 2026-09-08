@@ -13,5 +13,8 @@
       "esbuild",
       "unrs-resolver"
     ]
+  },
+  "devDependencies": {
+    "next": "16.3.4"
   }
 }

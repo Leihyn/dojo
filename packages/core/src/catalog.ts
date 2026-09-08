@@ -57,6 +57,8 @@ export interface QualityReport {
   byCategory: Record<string, number>;
   warnings: Record<string, number>;
   scanTotals: Record<string, number>;
+  /** Filters that did not answer. Coverage is narrower than intended when this is non-empty, and the marketplace says so rather than quietly showing fewer agents. */
+  scanFailures: string[];
 }
 
 export interface BuildOptions {
@@ -72,6 +74,7 @@ export async function buildCatalog(opts: BuildOptions): Promise<Catalog> {
   const log = opts.log ?? (() => {});
   const candidates = new Map<string, ScanAgent>();
   const scanTotals: Record<string, number> = {};
+  const scanFailures: string[] = [];
   for (const chainId of opts.chainIds) {
     const filters: Array<[string, Parameters<ScanClient["listAgents"]>[0]]> = [
       ["endpoint_verified", { chainId, endpointVerified: true, limit: opts.perFilter }],
@@ -81,10 +84,17 @@ export async function buildCatalog(opts: BuildOptions): Promise<Catalog> {
       ["latest", { chainId, limit: opts.perFilter }],
     ];
     for (const [name, p] of filters) {
-      const { items, total } = await opts.scan.listAgents(p);
-      scanTotals[`${chainId}:${name}`] = total;
-      for (const a of items) candidates.set(agentKey(a.chain_id, a.token_id), a);
-      log(`[scan] chain ${chainId} ${name}: ${items.length} of ${total}`);
+      // One filter failing costs coverage; it must not cost the whole run. The failure is recorded
+      // and reported, because silently indexing fewer agents is worse than saying which lens went dark.
+      try {
+        const { items, total } = await opts.scan.listAgents(p);
+        scanTotals[`${chainId}:${name}`] = total;
+        for (const a of items) candidates.set(agentKey(a.chain_id, a.token_id), a);
+        log(`[scan] chain ${chainId} ${name}: ${items.length} of ${total}`);
+      } catch (e) {
+        scanFailures.push(`${chainId}:${name}: ${(e as Error).message}`);
+        log(`[scan] chain ${chainId} ${name}: FAILED (${(e as Error).message}) - continuing with reduced coverage`);
+      }
     }
   }
 
@@ -101,7 +111,7 @@ export async function buildCatalog(opts: BuildOptions): Promise<Catalog> {
   }
 
   entries.sort(rank);
-  return { builtAt: new Date().toISOString(), chainIds: opts.chainIds, entries, quality: qualityReport(entries, scanTotals) };
+  return { builtAt: new Date().toISOString(), chainIds: opts.chainIds, entries, quality: qualityReport(entries, scanTotals, scanFailures) };
 }
 
 async function enrich(a: ScanAgent): Promise<CatalogEntry> {
@@ -176,7 +186,13 @@ export function displayName(registryName: string | null | undefined, cardName: s
 }
 
 const LIVE_RANK: Record<ProbeState, number> = { live: 0, gated: 1, unresolved: 2, skipped: 3, dead: 4 };
-function rank(a: CatalogEntry, b: CatalogEntry): number {
+/**
+ * Ranking order: a graded score first, then whether the agent answers, then how much on-chain
+ * feedback it carries. Exported because the marketplace must sort with it at read time — relying on
+ * the order the catalog file happens to be written in silently drops graded agents down the page
+ * whenever scores are merged in after indexing.
+ */
+export function rank(a: CatalogEntry, b: CatalogEntry): number {
   const pa = a.performance?.score ?? -1, pb = b.performance?.score ?? -1;
   if (pa !== pb) return pb - pa;
   if (LIVE_RANK[a.liveStatus] !== LIVE_RANK[b.liveStatus]) return LIVE_RANK[a.liveStatus] - LIVE_RANK[b.liveStatus];
@@ -184,8 +200,8 @@ function rank(a: CatalogEntry, b: CatalogEntry): number {
   return (b.scan?.totalScore ?? 0) - (a.scan?.totalScore ?? 0);
 }
 
-function qualityReport(entries: CatalogEntry[], scanTotals: Record<string, number>): QualityReport {
-  const q: QualityReport = { candidates: entries.length, registrationOk: 0, registrationFailed: 0, withEndpoint: 0, live: 0, gated: 0, dead: 0, unresolved: 0, byCategory: {}, warnings: {}, scanTotals };
+function qualityReport(entries: CatalogEntry[], scanTotals: Record<string, number>, scanFailures: string[] = []): QualityReport {
+  const q: QualityReport = { candidates: entries.length, registrationOk: 0, registrationFailed: 0, withEndpoint: 0, live: 0, gated: 0, dead: 0, unresolved: 0, byCategory: {}, warnings: {}, scanTotals, scanFailures };
   for (const e of entries) {
     if (e.registration.ok) q.registrationOk++; else q.registrationFailed++;
     if (e.endpoints.a2a || e.endpoints.mcp || e.endpoints.web) q.withEndpoint++;
