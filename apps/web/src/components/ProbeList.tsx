@@ -7,11 +7,19 @@ import { ago } from "@/lib/format";
 export function ProbeList({ initial }: { initial: Probe[] }) {
   const [probes, setProbes] = useState(initial);
   const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   async function recheck() {
     setBusy(true);
+    setError(null);
     try {
       const res = await fetch("/api/probe", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ endpoints: Object.fromEntries(probes.map((p) => [p.kind, p.endpoint])) }) });
-      if (res.ok) setProbes((await res.json()).probes);
+      const body = await res.json().catch(() => ({}));
+      // The route refuses loopback and link-local targets, and several registered agents do
+      // advertise 127.0.0.1. Saying so beats a button that looks broken.
+      if (res.ok) setProbes(body.probes);
+      else setError(typeof body.error === "string" ? body.error : `probe failed (HTTP ${res.status})`);
+    } catch {
+      setError("could not reach the probe endpoint");
     } finally {
       setBusy(false);
     }
@@ -30,9 +38,12 @@ export function ProbeList({ initial }: { initial: Probe[] }) {
           {(p.evidence || p.error) && <div className={`mt-1 text-xs ${p.error ? "text-rose-300/80" : "text-emerald-300/80"}`}>{p.evidence ?? p.error}</div>}
         </div>
       ))}
-      <button onClick={recheck} disabled={busy} className="rounded-md border border-white/15 px-3 py-1.5 text-xs text-zinc-200 hover:border-amber-400/50 disabled:opacity-50">
-        {busy ? "Checking…" : "Check again now"}
-      </button>
+      <div className="flex flex-wrap items-center gap-2">
+        <button onClick={recheck} disabled={busy} className="rounded-md border border-white/15 px-3 py-1.5 text-xs text-zinc-200 hover:border-amber-400/50 disabled:opacity-50">
+          {busy ? "Checking…" : "Check again now"}
+        </button>
+        {error && <span className="text-xs text-amber-300/80">{error}</span>}
+      </div>
     </div>
   );
 }
