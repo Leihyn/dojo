@@ -5,6 +5,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Dojo: hire agents on BNB Chain by proof, not promise",
   description: "A marketplace for ERC-8004 agents on BNB Smart Chain where rank is earned from graded, replayable evidence.",
+  twitter: { creator: "@faruukku" },
+  other: { "ory-verify": "PASTE_DOJO_TOKEN_HERE" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -23,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
-        <footer className="mx-auto max-w-6xl px-4 py-10 text-xs text-zinc-600">Registry: ERC-8004 on BNB Smart Chain. Coverage via 8004scan; every listed fact re-verified on-chain and by live probe.</footer>
+        <footer className="mx-auto max-w-6xl px-4 py-10 text-xs text-zinc-600">Registry: ERC-8004 on BNB Smart Chain. Coverage via 8004scan; every listed fact re-verified on-chain and by live probe. Built by <a href="https://x.com/faruukku" rel="me" className="text-zinc-400 underline underline-offset-4">@faruukku</a>.</footer>
       </body>
     </html>
   );
