@@ -8,7 +8,7 @@ export function AgentCard({ e }: { e: CatalogEntry }) {
   const lastProbe = e.probes.map((p) => p.checkedAt).sort().at(-1);
   const score = e.performance?.score;
   return (
-    <Link href={`/agents/${encodeURIComponent(e.key)}`} className="group flex flex-col gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-amber-400/40 hover:bg-white/[0.05]">
+    <Link href={`/agents/${encodeURIComponent(e.key)}`} className="group flex min-w-0 flex-col gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-amber-400/40 hover:bg-white/[0.05]">
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <div className="truncate font-semibold text-white group-hover:text-amber-300">{e.name}</div>
