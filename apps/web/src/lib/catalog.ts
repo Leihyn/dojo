@@ -1,5 +1,5 @@
-import type { Catalog, CatalogEntry, Category } from "@dojo/core";
-import { CATEGORIES, rank } from "@dojo/core";
+import type { Catalog, CatalogEntry, Category, RefAgentName, Scorecard } from "@dojo/core";
+import { CATEGORIES, REF_AGENTS, rank } from "@dojo/core";
 import raw from "@/data/catalog.json";
 
 const catalog = raw as unknown as Catalog;
@@ -61,4 +61,18 @@ export function gradingMethod(key: string): GradingMethod | undefined {
 
 export function gradingRun(): ScorecardsFile {
   return scorecards;
+}
+
+export interface GradedAgent { key: string; name: string; title: string; sc: Scorecard; method?: GradingMethod }
+
+/** Agents with a real score, best first. Today these are the reference agents graded by replay. */
+export function gradedAgents(): GradedAgent[] {
+  const all = (scorecardsJson as { scorecards?: Record<string, Scorecard> }).scorecards ?? {};
+  return Object.entries(all)
+    .filter(([, sc]) => sc.score != null)
+    .map(([key, sc]) => {
+      const name = key.replace(/^\d+:dojo-/, "");
+      return { key, name, title: REF_AGENTS[name as RefAgentName]?.title ?? name, sc, method: scorecards.methods?.[key] };
+    })
+    .sort((a, b) => (b.sc.score ?? 0) - (a.sc.score ?? 0));
 }

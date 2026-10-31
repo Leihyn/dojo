@@ -24,25 +24,27 @@ export function ProbeList({ initial }: { initial: Probe[] }) {
       setBusy(false);
     }
   }
-  if (probes.length === 0) return <p className="text-sm text-zinc-500">The registration file advertises no endpoint, so there is nothing to call.</p>;
+  if (probes.length === 0) return <p className="text-sm text-ink-2">The registration file advertises no endpoint, so there is nothing to call.</p>;
   return (
-    <div className="space-y-2">
-      {probes.map((p) => (
-        <div key={p.kind + p.endpoint} className="rounded-lg border border-white/10 bg-black/20 p-3 text-sm">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded bg-white/10 px-1.5 py-0.5 font-mono text-[11px] uppercase">{p.kind}</span>
-            <StatusBadge state={p.state} />
-            <span className="text-xs text-zinc-500">checked {ago(p.checkedAt)}{p.latencyMs != null ? ` · ${p.latencyMs} ms` : ""}{p.httpStatus ? ` · HTTP ${p.httpStatus}` : ""}</span>
-          </div>
-          <div className="mt-1 break-all font-mono text-xs text-zinc-400">{p.endpoint}</div>
-          {(p.evidence || p.error) && <div className={`mt-1 text-xs ${p.error ? "text-rose-300/80" : "text-emerald-300/80"}`}>{p.evidence ?? p.error}</div>}
-        </div>
-      ))}
-      <div className="flex flex-wrap items-center gap-2">
-        <button onClick={recheck} disabled={busy} className="rounded-md border border-white/15 px-3 py-1.5 text-xs text-zinc-200 hover:border-amber-400/50 disabled:opacity-50">
+    <div>
+      <ul className={`transition-opacity duration-[var(--dur-fast)] ease-out ${busy ? "opacity-50" : ""}`} aria-busy={busy}>
+        {probes.map((p) => (
+          <li key={p.kind + p.endpoint} className="border-t border-line py-3 first:border-t-0 first:pt-0">
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="num w-10 shrink-0 text-xs font-semibold uppercase text-ink">{p.kind}</span>
+              <StatusBadge state={p.state} />
+              <span className="num text-xs text-ink-3">{ago(p.checkedAt)}{p.latencyMs != null ? ` · ${p.latencyMs} ms` : ""}{p.httpStatus ? ` · HTTP ${p.httpStatus}` : ""}</span>
+            </div>
+            <div className="num mt-1 break-all text-xs text-ink-2">{p.endpoint}</div>
+            {(p.evidence || p.error) && <div className={`mt-1 text-xs ${p.error ? "text-critical" : "text-ok"}`}>{p.evidence ?? p.error}</div>}
+          </li>
+        ))}
+      </ul>
+      <div className="mt-3 flex flex-wrap items-center gap-3" aria-live="polite">
+        <button onClick={recheck} disabled={busy} className="h-[var(--control-h)] rounded-control border border-line-strong bg-paper px-4 text-sm font-medium text-ink transition-colors duration-[var(--dur-hover)] ease-out hover:bg-paper-2 active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-50">
           {busy ? "Checking…" : "Check again now"}
         </button>
-        {error && <span className="text-xs text-amber-300/80">{error}</span>}
+        {error && <span className="text-xs text-critical">{error}</span>}
       </div>
     </div>
   );

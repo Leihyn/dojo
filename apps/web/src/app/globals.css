@@ -1,26 +1,142 @@
 @import "tailwindcss";
 
+/* Dojo tokens. Three tiers: base -> semantic -> component. Components read semantic tokens only.
+   Light only. Plinth system: bone page, white cards, one green, pill controls. See DESIGN_SYSTEM.md. */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ===== BASE: brand, one hue (dojo green). Variety from alpha, never a second hue. ===== */
+  --green-400: #0fa37f;   /* display type and illustration only: 3.06:1 on bone */
+  --green-600: #0b8366;   /* fills under white text: 4.72:1 */
+  --green-700: #08705a;   /* green text and links: 5.78:1 on bone */
+
+  /* ===== BASE: neutrals ===== */
+  --bone: #fafaf7;
+  --white: #ffffff;
+  --bone-2: #f3f3ef;
+  --ink-900: #0a0a0a;
+  --ink-600: #5e5e5d;
+  --ink-500: #676765;
+  --ink-400: #858582;
+
+  /* ===== BASE: illustration palette (home page art only) ===== */
+  --art-wood: #7a4a2e; --art-wood-d: #55301d; --art-roof: #33424f; --art-roof-d: #26323c;
+  --art-paper: #f6eedc; --art-sky: #cfe8ef; --art-sand: #ecdcbc; --art-red: #c8553d;
+
+  /* ===== SEMANTIC (names kept from the receipt system so every page switches together) ===== */
+  --c-desk: var(--bone);              /* the page */
+  --c-paper: var(--white);            /* cards */
+  --c-paper-2: var(--bone-2);         /* a section inside a card, hover */
+  --c-ink: var(--ink-900);            /* 18.93:1 on bone */
+  --c-ink-2: var(--ink-600);          /* 6.21:1 on bone */
+  --c-ink-3: var(--ink-500);          /* 5.42:1 on bone, 5.10:1 on bone-2 */
+  --c-rule: rgb(10 10 10 / 0.12);     /* decoration only: leaders, dividers */
+  --c-line: rgb(10 10 10 / 0.08);     /* hairline borders */
+  --c-line-strong: var(--ink-400);    /* control borders, 3.54:1 bone, 3.33:1 bone-2 */
+  --c-accent: var(--green-600);
+  --c-accent-hover: var(--green-700);
+  --c-accent-display: var(--green-400);
+  --c-on-accent: var(--white);
+  --c-mark: rgb(15 163 127 / 0.16);   /* highlighter */
+  --c-mark-faint: rgb(15 163 127 / 0.08);
+  --c-ring: var(--ink-900);
+
+  /* Severity: dot + label + color, four steps. All 4.5:1 or better on bone and white. */
+  --c-ok: var(--green-700);
+  --c-watch: #8a6100;
+  --c-warn: #b4501b;
+  --c-critical: #c0362c;
+
+  /* ===== TYPE ===== */
+  --font-sans: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-clash), var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+  --t-12: 12px; --t-14: 14px; --t-16: 16px; --t-18: 18px; --t-20: 20px; --t-23: 23px;
+  --lh-tight: 1.05; --lh-snug: 1.35; --lh-body: 1.55;
+  --track-display: -0.015em; --track-caps: 0.12em;
+
+  /* ===== SPACE: 4px base ===== */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 20px; --s-6: 24px; --s-8: 32px; --s-10: 40px; --s-12: 48px; --s-16: 64px;
+
+  /* ===== RADIUS by role: pills for controls, soft cards ===== */
+  --r-control: 9999px; --r-slip: 16px; --r-overlay: 18px; --r-inset: 12px; --r-chip: 6px;
+
+  /* ===== SHADOW: neutral and downward only ===== */
+  --shadow-slip: 0 1px 2px rgb(10 10 10 / 0.04), 0 12px 32px -16px rgb(10 10 10 / 0.14);
+
+  /* ===== MOTION ===== */
+  --dur-hover: 100ms; --dur-fast: 150ms; --dur-enter: 200ms; --dur-exit: 120ms;
+  --ease-out: cubic-bezier(0.22, 0.72, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+
+  /* ===== COMPONENT ===== */
+  --hit: 44px;
+  --control-h: 48px;
+  --content-w: 1200px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-desk: var(--c-desk);
+  --color-paper: var(--c-paper);
+  --color-paper-2: var(--c-paper-2);
+  --color-ink: var(--c-ink);
+  --color-ink-2: var(--c-ink-2);
+  --color-ink-3: var(--c-ink-3);
+  --color-rule: var(--c-rule);
+  --color-line: var(--c-line);
+  --color-line-strong: var(--c-line-strong);
+  --color-accent: var(--c-accent);
+  --color-accent-hover: var(--c-accent-hover);
+  --color-accent-display: var(--c-accent-display);
+  --color-on-accent: var(--c-on-accent);
+  --color-mark: var(--c-mark);
+  --color-mark-faint: var(--c-mark-faint);
+  --color-ok: var(--c-ok);
+  --color-watch: var(--c-watch);
+  --color-warn: var(--c-warn);
+  --color-critical: var(--c-critical);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-display: var(--font-display);
+  --radius-control: var(--r-control);
+  --radius-slip: var(--r-slip);
+  --radius-overlay: var(--r-overlay);
+  --radius-inset: var(--r-inset);
+  --shadow-slip: var(--shadow-slip);
+  /* Type ladder: xs 12, sm 14, base 16, lg 18, xl 20, 2xl 23; display 3xl 32, 4xl 48, 5xl 64. */
+  --text-2xl: 23px;
+  --text-2xl--line-height: 1.25;
+  --text-3xl: 32px;
+  --text-3xl--line-height: 1.1;
+  --text-4xl: 48px;
+  --text-4xl--line-height: 1.05;
+  --text-5xl: 64px;
+  --text-5xl--line-height: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Primitives. */
+@utility caps { font-size: 12px; line-height: 1.35; font-weight: 500; letter-spacing: var(--track-caps); text-transform: uppercase; color: var(--c-ink-3); }
+@utility mark { background: var(--c-mark); color: var(--c-ink); padding: 0 6px; border-radius: var(--r-chip); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 
+html { background: var(--c-desk); color-scheme: light; }
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--c-desk);
+  color: var(--c-ink);
+  font-family: var(--font-sans);
+  font-size: var(--t-16);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Machine facts: mono and tabular, always. */
+.num, [data-num], code, kbd, samp { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+
+/* Designed two-ring focus, every interactive element. */
+:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--c-paper), 0 0 0 4px var(--c-ring); }
+
+h1, h2, h3, .display { font-family: var(--font-display); letter-spacing: var(--track-display); font-weight: 600; }
+
+::selection { background: var(--c-mark); color: var(--c-ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }

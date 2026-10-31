@@ -21,36 +21,47 @@ export function ActivatePanel({ e }: { e: CatalogEntry }) {
     }
   }
 
-  const tabs: Array<["mcp" | "a2a" | "x402", string, boolean]> = [["mcp", "Use in your IDE (MCP)", Boolean(e.endpoints.mcp)], ["a2a", "Call from another agent (A2A)", Boolean(e.endpoints.a2a)], ["x402", "Pay per call (x402)", true]];
+  const tabs: Array<["mcp" | "a2a" | "x402", string, boolean]> = [["mcp", "MCP", Boolean(e.endpoints.mcp)], ["a2a", "A2A", Boolean(e.endpoints.a2a)], ["x402", "x402", true]];
   return (
-    <div className="rounded-xl border border-amber-400/30 bg-amber-400/[0.04] p-4">
-      <div className="flex flex-wrap gap-2">
+    <section aria-label="Connect to this agent" className="min-w-0 rounded-slip border border-line bg-paper px-6 py-5 shadow-slip">
+      <div className="caps">Connect</div>
+      <div role="tablist" aria-label="How to connect" className="mt-3 flex gap-1 rounded-control border border-line-strong p-1">
         {tabs.map(([k, label, enabled]) => (
-          <button key={k} disabled={!enabled} onClick={() => setTab(k)} className={`rounded-md px-3 py-1.5 text-xs ${tab === k ? "bg-amber-400 text-black" : "border border-white/15 text-zinc-300"} disabled:cursor-not-allowed disabled:opacity-40`}>{label}</button>
+          <button
+            key={k}
+            role="tab"
+            aria-selected={tab === k}
+            disabled={!enabled}
+            title={enabled ? undefined : `This agent advertises no ${label} endpoint`}
+            onClick={() => setTab(k)}
+            className={`min-h-[var(--hit)] flex-1 rounded-control px-2 text-sm font-medium transition-colors duration-[var(--dur-hover)] ease-out disabled:cursor-not-allowed disabled:opacity-50 ${tab === k ? "bg-ink text-paper" : "text-ink-2 hover:text-ink"}`}
+          >
+            {label}
+          </button>
         ))}
       </div>
-      <div className="mt-4 text-sm text-zinc-300">
+      <div role="tabpanel" className="mt-4 text-sm text-ink-2">
         {tab === "mcp" && mcpConfig && (
           <div>
-            <p>Paste into Claude Desktop, Cursor or any MCP host. The server answered our initialize probe {e.probes.find((p) => p.kind === "mcp")?.state === "live" ? "successfully" : "with problems, see evidence above"}.</p>
-            <pre className="mt-2 overflow-x-auto rounded-md bg-black/40 p-3 font-mono text-xs text-zinc-200">{mcpConfig}</pre>
+            <p>Paste into Claude Desktop, Cursor or any MCP host. The server {e.probes.find((p) => p.kind === "mcp")?.state === "live" ? "answered our initialize probe" : "had problems on our last probe; see the evidence"}.</p>
+            <pre className="num mt-3 overflow-x-auto rounded-inset border border-line bg-paper-2 p-3 text-xs text-ink">{mcpConfig}</pre>
           </div>
         )}
         {tab === "a2a" && e.endpoints.a2a && (
           <div>
             <p>Agent card for A2A clients:</p>
-            <pre className="mt-2 overflow-x-auto rounded-md bg-black/40 p-3 font-mono text-xs text-zinc-200">{e.endpoints.a2a}</pre>
+            <pre className="num mt-3 overflow-x-auto rounded-inset border border-line bg-paper-2 p-3 text-xs text-ink">{e.endpoints.a2a}</pre>
           </div>
         )}
         {tab === "x402" && (
           <div>
-            <p>{e.x402 ? "This agent advertises x402 support." : "This agent does not advertise x402 support; the call below will only work for agents that answer a 402 challenge."} The marketplace pays from a testnet session wallet with a per-call cap, records a receipt, and grades the result.</p>
-            <button onClick={payAndCall} disabled={busy} className="mt-3 rounded-md bg-amber-400 px-3 py-1.5 text-xs font-semibold text-black disabled:opacity-50">{busy ? "Calling…" : "Pay & call (testnet)"}</button>
-            {result && <pre className="mt-2 overflow-x-auto rounded-md bg-black/40 p-3 font-mono text-xs text-zinc-200">{result}</pre>}
+            <p>{e.x402 ? "This agent advertises x402 support." : "This agent does not advertise x402 support; a call only works for agents that answer a 402 challenge."} Dojo would pay from a capped testnet session wallet, record a receipt, and grade the result.</p>
+            <button onClick={payAndCall} disabled={busy} className="mt-3 h-[var(--control-h)] rounded-control bg-accent px-4 text-sm font-semibold text-on-accent transition-colors duration-[var(--dur-hover)] ease-out hover:bg-accent-hover active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-50">{busy ? "Calling…" : "Pay & call (testnet)"}</button>
+            {result && <pre className="num mt-3 overflow-x-auto whitespace-pre-wrap rounded-inset border border-line bg-paper-2 p-3 text-xs text-ink" aria-live="polite">{result}</pre>}
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }
 
